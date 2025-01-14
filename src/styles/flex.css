@@ -47,9 +47,14 @@ div.flex-no-wrap {
     flex-wrap: nowrap;
 }
 
-div.flex-justify-center {
+div.flex-justify-content-center {
     display: flex;
     justify-content: center;
+}
+
+div.flex-align-self-center {
+    display: flex;
+    align-self: center;
 }
 
 div.flex-gap-8 {

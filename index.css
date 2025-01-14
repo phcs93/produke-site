@@ -1,6 +1,9 @@
 body {
     background-color: #050505;
     color: lightgray;
+    font-family: Verdana;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 img#icon {
@@ -12,3 +15,56 @@ img#logo {
     image-rendering: pixelated;
     height: 32px;
 }
+
+img#author {
+    image-rendering: pixelated;
+    height: 16px;
+}
+
+img#site-author {
+    image-rendering: pixelated;
+    height: 16px;
+}
+
+div#navbar {
+
+    background-color: #1E1E1E;
+
+    padding: 16px;
+
+    & > a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #f1c534;
+        &:hover {
+            color: white;
+        }
+    }
+
+    &[data-page="home"] > a[href="?p=home"] { text-decoration: underline; }
+    &[data-page="features"] > a[href="?p=features"] { text-decoration: underline; }
+    &[data-page="changelog"] > a[href="?p=changelog"] { text-decoration: underline; }
+
+    & > span.separator {
+        color: #bba247;
+    }
+
+}
+
+select#lang {
+    position: absolute;
+    right: 32;
+    background-color: #1E1E1E;
+    color: lightgrey;
+    border: none;
+    outline:0px;
+    cursor: pointer;
+}
+
+div#content {
+    background-color: #0E0E0E;
+}
+
+/* extremely lazy i18n */
+html[lang="en"] [lang="pt"] { display: none; }
+html[lang="pt"] [lang="en"] { display: none; }

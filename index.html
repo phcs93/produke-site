@@ -1,10 +1,10 @@
-<html>
+<html lang="en">
 
     <head>
 
-        <title>ProDuke</title>        
+        <title>proDuke</title>        
 
-        <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="res/favicon.png" type="image/x-icon">
 
         <link rel="stylesheet" href="src/styles/flex.css">
 
@@ -15,25 +15,45 @@
 
     <body>
 
-        <br>
+        <br><br><br>
 
         <div class="flex-rows flex-gap-16">
 
-            <div class="flex-justify-center">
-                <img id="icon" src="res/icon/attempt1.gif" alt="produke icon">                
+            <div class="flex-justify-content-center">
+                <img id="icon" src="res/icon/attempt2.gif" alt="produke icon">                
             </div>
 
-            <div class="flex-justify-center">
-                <img id="logo" src="res/logo/attempt1.png" alt="produke logo">
-            </div>            
-    
-            <div id="navbar">
-                <a href="?p=home">home</a>
-                <a href="?p=features">features</a>
-                <a href="?p=changelog">changelog</a>
+            <div class="flex-justify-content-center">
+                <img id="logo" src="res/logo/attempt6.png" alt="produke logo">
+            </div>      
+            
+            <div class="flex-justify-content-center">
+                <img id="author" src="res/authors/attempt2.png" alt="produke author">
             </div>
-    
-            <div id="content"></div>
+
+            <br>
+
+            <div>
+
+                <div id="navbar" class="flex-columns flex-grow flex-justify-content-center flex-gap-16">
+                    <a href="?p=home">HOME</a>
+                    <span class="separator">|</span>
+                    <a href="?p=features">FEATURES</a>
+                    <span class="separator">|</span>
+                    <a href="?p=changelog">CHANGELOG</a>
+                    <select id="lang">
+                        <option value="en">EN</option>
+                        <option value="pt">PT</option>
+                    </select>
+                </div>
+        
+                <div id="content" class="flex-justify-content-center"></div>
+
+            </div>
+            
+            <div class="flex-justify-content-center">
+                <img id="site-author" src="res/authors/sitebylard-gold.png" alt="site author">
+            </div>
 
         </div>        
 

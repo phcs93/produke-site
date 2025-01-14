@@ -1,0 +1,61 @@
+div.flex {
+    display: flex;
+}
+
+div.flex-columns {
+    display: flex;
+    flex-direction: row;
+}
+
+div.flex-rows {
+    display: flex;
+    flex-direction: column;
+}
+
+div.flex-grow {
+    display: flex;
+    flex-grow: 1;
+}
+
+div.flex-shrink {
+    display: flex;
+    flex-shrink: 1;
+}
+
+div.flex-no-grow {
+    display: flex;
+    flex-shrink: 0;
+}
+
+div.flex-no-shrink {
+    display: flex;
+    flex-shrink: 0;
+}
+
+div.flex-basis-zero {
+    display: flex;
+    flex-basis: 0;
+}
+
+div.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.flex-no-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+div.flex-justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+div.flex-gap-8 {
+    gap: 8px;
+}
+
+div.flex-gap-16 {
+    gap: 16px;
+}

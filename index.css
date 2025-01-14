@@ -1,0 +1,14 @@
+body {
+    background-color: #050505;
+    color: lightgray;
+}
+
+img#icon {
+    image-rendering: pixelated;
+    height: 128px;
+}
+
+img#logo {
+    image-rendering: pixelated;
+    height: 32px;
+}

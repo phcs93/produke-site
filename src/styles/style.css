@@ -1,0 +1,48 @@
+button {
+    background-color: var(--progold);
+    border-radius: 8px;
+    height: 48px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    width: 128px;
+    &:hover {
+        background-color: lightgrey;
+    }
+}
+
+hr {
+    border-color: var(--progold);
+    width: 100%;
+    border-width: 1px 0 0 0;
+}
+
+label.divider {
+    text-align: center !important;
+    color: var(--progold);
+    text-shadow: none;
+    display: flex !important;
+    align-items: center;
+    line-height: 20px;
+    font-weight: bold;
+    width: 100%;
+    &::before, &::after {
+        border-top: 1px solid var(--progold);
+        content: "";
+        flex-grow: 1;
+        font-size: 0px;
+        line-height: 0px;
+    }
+    &::before { margin-right: 8px; }
+    &::after { margin-left: 8px; }
+}
+
+a {
+    text-decoration: none;
+    color: var(--progold);
+    &:hover {
+        color: white;
+    }
+}

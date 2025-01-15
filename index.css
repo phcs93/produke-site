@@ -33,12 +33,7 @@ div#navbar {
     padding: 16px;
 
     & > a {
-        text-decoration: none;
         font-weight: bold;
-        color: #f1c534;
-        &:hover {
-            color: white;
-        }
     }
 
     &[data-page="home"] > a[href="?p=home"] { text-decoration: underline; }
@@ -46,7 +41,7 @@ div#navbar {
     &[data-page="changelog"] > a[href="?p=changelog"] { text-decoration: underline; }
 
     & > span.separator {
-        color: #bba247;
+        color: var(--progold);
     }
 
 }
@@ -59,10 +54,6 @@ select#lang {
     border: none;
     outline:0px;
     cursor: pointer;
-}
-
-div#content {
-    background-color: #0E0E0E;
 }
 
 /* extremely lazy i18n */

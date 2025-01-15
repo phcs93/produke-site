@@ -52,6 +52,11 @@ div.flex-justify-content-center {
     justify-content: center;
 }
 
+div.flex-align-items-center {
+    display: flex;
+    align-items: center;
+}
+
 div.flex-align-self-center {
     display: flex;
     align-self: center;
@@ -63,4 +68,12 @@ div.flex-gap-8 {
 
 div.flex-gap-16 {
     gap: 16px;
+}
+
+div.margin-16 {
+    margin: 16px;
+}
+
+div.padding-16 {
+    padding: 16px;
 }

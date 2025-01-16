@@ -1,9 +1,9 @@
 button {
     background-color: var(--progold);
     border-radius: 8px;
-    height: 48px;
+    height: 42px;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     cursor: pointer;
     border: none;
@@ -45,4 +45,15 @@ a {
     &:hover {
         color: white;
     }
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0px;
+}
+
+div.box {
+    background-color: #0E0E0E;
+    border-radius: 10px;
+    padding: 32px;
+    width: 800px;
 }

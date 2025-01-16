@@ -6,9 +6,11 @@
 
         <link rel="shortcut icon" href="res/favicon.png" type="image/x-icon">
 
-        <link rel="stylesheet" href="src/styles/style.css">
         <link rel="stylesheet" href="src/styles/colors.css">
         <link rel="stylesheet" href="src/styles/flex.css">
+        <link rel="stylesheet" href="src/styles/menu.css">
+        <link rel="stylesheet" href="src/styles/style.css">
+        
 
         <link rel="stylesheet" href="index.css">
         <script src="index.js"></script>
@@ -35,7 +37,7 @@
 
             <br>
 
-            <div>
+            <div class="flex-rows flex-gap-32">
 
                 <div id="navbar" class="flex-columns flex-grow flex-justify-content-center flex-gap-16">
                     <a href="?p=home">HOME</a>
@@ -49,12 +51,12 @@
                     </select>
                 </div>
         
-                <div id="content"></div>
+                <div id="container" class="flex-justify-content-center"></div>
 
-            </div>
-            
-            <div class="flex-justify-content-center">
-                <img id="site-author" src="res/sitebylard.png" alt="site author">
+                <div class="flex-justify-content-center">
+                    <img id="site-author" src="res/sitebylard.png" alt="site author">
+                </div>
+
             </div>
 
         </div>        

@@ -4,6 +4,7 @@ body {
     font-family: Verdana;
     margin: 0 !important;
     padding: 0 !important;
+    margin-bottom: 32px !important;
 }
 
 img#icon {
@@ -29,8 +30,10 @@ img#site-author {
 div#navbar {
 
     background-color: #1E1E1E;
-
     padding: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 
     & > a {
         font-weight: bold;
@@ -45,6 +48,16 @@ div#navbar {
     }
 
 }
+
+/* hack to make anchors work even with the fixed navbar on top */
+h1, h2, h3, h4, h5 {
+    position: relative;
+    & > span[id] {
+        position: absolute; 
+        top: -83px;
+    }
+}
+
 
 select#lang {
     position: absolute;

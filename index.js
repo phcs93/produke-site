@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         location.hash = hash;
     }
 
-    const sections = document.querySelectorAll("div#content section");
+    const sections = document.querySelectorAll("div.content section");
 
     document.body.onscroll = e => {
 

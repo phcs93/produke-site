@@ -49,16 +49,6 @@ div#navbar {
 
 }
 
-/* hack to make anchors work even with the fixed navbar on top */
-h1, h2, h3, h4, h5 {
-    position: relative;
-    & > span[id] {
-        position: absolute; 
-        top: -83px;
-    }
-}
-
-
 select#lang {
     position: absolute;
     right: 32;

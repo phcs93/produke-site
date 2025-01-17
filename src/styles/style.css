@@ -14,7 +14,7 @@ button {
 }
 
 hr {
-    border-color: var(--progold);
+    border-color: gray;
     width: 100%;
     border-width: 1px 0 0 0;
 }
@@ -47,7 +47,7 @@ a {
     }
 }
 
-h1, h2, h3, h4, h5 {
+p {
     margin: 0px;
 }
 
@@ -57,3 +57,49 @@ div.box {
     padding: 32px;
     width: 800px;
 }
+
+div.content img {
+    border: 1px solid var(--progold)
+}
+
+div.info {
+
+    /* border: 1px solid gray; */
+    border-radius: 5px;
+    line-height: 32px;
+    min-height: 32px;
+    /* box-sizing: border-box; */
+    display: flex;
+    background-color: #1E1E1E;
+    font-family: monospace;
+
+    &::before {
+        display: flex;
+        width: 192px;
+        min-width: 192px;
+        max-width: 192px;
+        background-color: #3E3E3E;
+        font-family: "Candara";
+        font-size: 14px;
+        font-weight: bold;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        line-height: 32px;
+        min-height: 32px;
+        box-sizing: border-box;
+        padding-right: 16px;
+        margin-right: 16px;
+        justify-content: end;
+        align-items: center;
+    }
+
+}
+
+html[lang="en"] div.info.path::before { content: "MENU PATH"; }
+html[lang="pt"] div.info.path::before { content: "CAMINHO NO MENU"; }
+
+html[lang="en"] div.info.args::before { content: "ARGUMENT"; }
+html[lang="pt"] div.info.args::before { content: "ARGUMENTO"; }
+
+html[lang="en"] div.info.console::before { content: "CONSOLE COMMAND"; }
+html[lang="pt"] div.info.console::before { content: "COMANDO NO CONSOLE"; }

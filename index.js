@@ -50,7 +50,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         });
 
-        const highest = ratios.reduce((a, b) => (a && a.visibility > b.visibility) ? a : b);
+        console.log(ratios);
+
+        const highest = ratios.reduce((a, b) => (b && b.visibility > a.visibility) ? b : a);
 
         document.querySelectorAll("div.menu li").forEach(e => e.classList.remove("highlight"));
         const li = document.querySelector(`a[href="#${highest.id}"]`).closest("li");

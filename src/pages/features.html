@@ -161,6 +161,12 @@
                         </a>
                     </li>
                     <li>
+                        <a href="#new-fragbar-modes">
+                            <span lang="en">New FragBar Modes</span>
+                            <span lang="pt">Novos Modos de FragBar</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="#new-mini-hud">
                             <span lang="en">New Mini HUD</span>
                             <span lang="pt">Nova Mini HUD</span>
@@ -392,6 +398,12 @@
                 </strong>
                 <ul>
                     <li>
+                        <a href="#mapping-guide">
+                            <span lang="en">Mapping Guide</span>
+                            <span lang="pt">Guia para Criar Mapas</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="#command-line-arguments">
                             <span lang="en">Command Line Arguments</span>
                             <span lang="pt">Argumentos de Linha de Comando</span>
@@ -402,11 +414,12 @@
                             <span lang="en">Console Commands</span>
                             <span lang="pt">Comandos de Console</span>
                         </a>
-                    </li>                  
+                    </li>
                 </ul>
             </li>
         </ul>
     </div>
+
 
     <div class="flex-rows flex-gap-32">
         
@@ -443,6 +456,7 @@
                 </span>
             </div>
 
+            <!-- tdm -->
             <section id="tdm-section">
 
                 <div class="flex-rows flex-gap-32">
@@ -456,15 +470,55 @@
                     <span lang="en">Just like normal DukeMatch, but in this mode, the score is the sum of each player's score in the team. If you kill a player from your own team, you loose a point.</span>
                     <span lang="pt">Exatamente igual ao modo DukeMatch, porém, a pontuação é a soma dos pontos de cada jogador no time. Se você matar um jogador do proprio time, você perde um ponto.</span>
 
-                    <h3>The Teams</h3>
-                    <h3>Frag Bar</h3>
-                    
+                    <span lang="en">There are 4 teams you can choose:</span>
+                    <span lang="pt">Você pode escolher entre 4 times:</span>
+
+                    <div class="flex-columns flex-gap-32 flex-justify-content-center">
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/player-team-1.png" alt="blue team - num 1 - pal 9" title="blue team - num 1 - pal 9">
+                            <label class="badge">
+                                <span lang="en">BLUE TEAM</span>
+                                <span lang="pt">TIME AZUL</span>
+                            </label>
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/player-team-2.png" alt="red team - num 2 - pal 10" title="red team - num 2 - pal 10">
+                            <label class="badge">
+                                <span lang="en">RED TEAM</span>
+                                <span lang="pt">TIME VERMELHO</span>
+                            </label>                                
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/player-team-3.png" alt="green team - num 3 - pal 11" title="green team - num 3 - pal 11">
+                            <label class="badge">
+                                <span lang="en">GREEN TEAM</span>
+                                <span lang="pt">TIME VERDE</span>
+                            </label>     
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/player-team-4.png" alt="brown team - num 4 - pal 15" title="brown team - num 4 - pal 15">
+                            <label class="badge">
+                                <span lang="en">BROWN TEAM</span>
+                                <span lang="pt">TIME MARROM</span>
+                            </label>                                
+                        </div>
+                    </div>
+
+                    <span lang="en">You can select your team in the menu <pre>Options > Player Setup > Team</pre>.</span>
+                    <span lang="pt">Você pode selecionar o seu time no menu <pre>Options > Player Setup > Team</pre>.</span>
+
+                    <span lang="en">The team score is displayed in a separate row in the fragbar, so it's possible to see exactly how many points each player has made in that round.</span>
+                    <span lang="pt">A pontuação do time é exibida em uma linha separada na fragbar, para que seja possivel ver exatamente quantos pontos cada jogador fez na partida.</span>
+
+                    <img class="screenshot" src="res/screenshots/fragbar-1.png" alt="fragbar">
+
                 </div>
 
             </section>
 
             <hr>
 
+            <!-- ctf -->
             <section id="ctf-section">
 
                 <div class="flex-rows flex-gap-32">
@@ -475,11 +529,107 @@
                         <a href="#ctf">#</a>
                     </h2>
 
-                    <span lang="en">In this mode, a team will score a point when capturing the enemy flag and bringing it back to its base. Killing players does not count as a point.</span>
-                    <span lang="pt">Nesse modo, o time ganha um ponto quando capturar a bandeira do inimigo e traze-la de volta para a sua base. Matar um jogador não conta como um ponto.</span>
+                    <span lang="en">In this mode, a team will score a point when capturing the enemy flag and bringing it back to its base. Your "base" is where your flag spawns, if your flag is not in its initial position, you will not be able to "deliver" the enemy flag and score a point. Killing other players does not add or subtract points from the team.</span>
+                    <span lang="pt">Neste modo, o time ganha um ponto quando capturar a bandeira do inimigo e à trazer de volta para a sua base. A sua "base" é o local onde sua bandeira nasce, se a sua bandeira não estiver na posição inicial, você não poderá "entregar" a bandeira do inimigo e marcar um ponto. Matar outros jogadores não soma nem subtrai pontos do time.</span>
                     
-                    <h3>The Flags</h3>
-                    <h3>Frag Bar</h3>
+                    <span lang="en">Each team has it's own flag:</span>
+                    <span lang="pt">Cada time tem sua propria bandeira:</span>
+
+                    <div class="flex-columns flex-gap-32 flex-justify-content-center">
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/flag-team-1.png" alt="blue team - num 1 - pal 9" title="blue team - num 1 - pal 9">
+                            <label class="badge">
+                                <span lang="en">BLUE FLAG</span>
+                                <span lang="pt">BANDEIRA AZUL</span>
+                            </label>
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/flag-team-2.png" alt="red team - num 2 - pal 10" title="red team - num 2 - pal 10">
+                            <label class="badge">
+                                <span lang="en">RED FLAG</span>
+                                <span lang="pt">BANDEIRA VERMELHA</span>
+                            </label>                                
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/flag-team-3.png" alt="green team - num 3 - pal 11" title="green team - num 3 - pal 11">
+                            <label class="badge">
+                                <span lang="en">GREEN FLAG</span>
+                                <span lang="pt">BANDEIRA VERDE</span>
+                            </label>     
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/flag-team-4.png" alt="brown team - num 4 - pal 15" title="brown team - num 4 - pal 15">
+                            <label class="badge">
+                                <span lang="en">BROWN FLAG</span>
+                                <span lang="pt">BANDEIRA MARROM</span>
+                            </label>                                
+                        </div>
+                    </div>
+
+                    <span lang="en">Arrows pointing to each flag are displayed in the bottom right corner of the screen.</span>
+                    <span lang="pt">Setas que apontam para cada bandeira são exibidas no canto inferior direito da tela.</span>
+
+                    <img class="screenshot" src="res/screenshots/flag-arrows.png" alt="flag arrows">
+
+                    <span lang="en">If the flag is being carried by another player, a hand icon with that players color will be displayed on top of the flag icon.</span>
+                    <span lang="pt">Se a bandeira estiver sendo carregada por outro jogador, um ícone de mão com a cor desse jogador será exibido em cima do icone da bandeira.</span>   
+
+                    <div class="flex-columns flex-gap-32 flex-justify-content-center">
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/hand-team-1.png" alt="taken by blue team - pal 1" title="taken by blue team - pal 1">
+                            <label class="badge">
+                                <span lang="en">TAKEN BY BLUE TEAM</span>
+                                <span lang="pt">PEGA PELO TIME AZUL</span>
+                            </label>
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/hand-team-2.png" alt="taken by red team - pal 2" title="taken by red team - pal 2">
+                            <label class="badge">
+                                <span lang="en">TAKEN BY RED TEAM</span>
+                                <span lang="pt">PEGA PELO TIME VERMELHO</span>
+                            </label>                                
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/hand-team-3.png" alt="taken by green team - pal 8" title="taken by green team - pal 8">
+                            <label class="badge">
+                                <span lang="en">TAKEN BY GREEN TEAM</span>
+                                <span lang="pt">PEGA PELO TIME VERDE</span>
+                            </label>     
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/hand-team-4.png" alt="taken by brown team - pal 5" title="taken by brown team - pal 5">
+                            <label class="badge">
+                                <span lang="en">TAKEN BY BROWN TEAM</span>
+                                <span lang="pt">PEGA PELO TIME MARROM</span>
+                            </label>                                
+                        </div>
+                    </div>
+
+                    <span lang="en">If the flag is being carried by yourself, a duke face icon will be displayed.</span>
+                    <span lang="pt">Se a bandeira estiver sendo carregada por você mesmo, um ícone do rosto do duke será exibido.</span>
+
+                    <div class="flex-columns flex-gap-32 flex-justify-content-center">
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/duke-face-icon.png" alt="duke face icon"> 
+                            <label class="badge">
+                                <span lang="en">TAKEN BY YOURSELF</span>
+                                <span lang="pt">PEGA POR VOCÊ MESMO</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <span lang="en">When a player picks/drops/returns or delivers a flag, a message is displayed for everyone.</span>
+                    <span lang="pt">Quando um jogador pega/derruba/retorna ou entrega a bandeira, uma mensagem é exibida para todos.</span>
+
+                    <img class="screenshot" src="res/screenshots/ctf-pick-flag.png" alt="pick flag">
+                    <img class="screenshot" src="res/screenshots/ctf-drop-flag.png" alt="drop flag">
+                    <img class="screenshot" src="res/screenshots/ctf-return-flag.png" alt="return flag">
+                    <img class="screenshot" src="res/screenshots/ctf-deliver-flag.png" alt="deliver flag">
+
+                    <span lang="en">The flag is dropped on the floor when the player carrying it dies. The flag returns to its original position when an allied player touches it or when the flag stays on the ground for 30 seconds. If the flag is dropped on a damaging floor (lava/acid/rail/purple lava), it returns to its original position in 5 seconds. A counter is displayed on top of the flag icon.</span>
+                    <span lang="pt">A bandeira é derrubada no chão quando o jogador que estava à carregando morre. A bandeira retorna para a posição inicial quando um jogador aliado encosta nela ou quando a bandeira ficar no chão por 30 segundos. Se a bandeira for derrubada em um chão que causa dano (lava/acido/trilhos/lava roxa), ela retorna para a posição inicial em 5 segundos. Um contador é exibido em cima do ícone da bandeira.</span>
+
+                    <img class="screenshot" src="res/screenshots/flag-counter.png" alt="flag counter">
 
                 </div>
 
@@ -487,6 +637,7 @@
 
             <hr>
 
+            <!-- 1fctf -->
             <section id="1-flag-ctf-section">
             
                 <div class="flex-rows flex-gap-32">
@@ -496,13 +647,24 @@
                         1 Flag CTF (1FCTF)
                         <a href="#1-flag-ctf">#</a>
                     </h2>
-            
+
+                    <div class="flex-columns flex-gap-32 flex-justify-content-center">
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/flag-team-0.png" alt="gray team - num 0 - pal 12" title="blue team - num 1 - pal 9">
+                            <label class="badge">
+                                <span lang="en">GRAY FLAG</span>
+                                <span lang="pt">BANDEIRA CINZA</span>
+                            </label>
+                        </div>
                     </div>
+            
+                </div>
             
             </section>
 
             <hr>
 
+            <!-- adctf -->
             <section id="atk-def-ctf-section">
             
                 <div class="flex-rows flex-gap-32">
@@ -513,12 +675,13 @@
                         <a href="#atk-def-ctf">#</a>
                     </h2>
             
-                    </div>
+                </div>
             
             </section>
 
             <hr>
 
+            <!-- score and time limit -->
             <section id="score-and-time-limit-section">
 
                 <div class="flex-rows flex-gap-32">
@@ -543,13 +706,13 @@
                     
                     <span lang="en">You can define a score or a time limit for a match. It works with all game modes.</span>
                     <span lang="pt">Você pode definir um limite de pontuação ou de tempo para uma partida. Funciona com todos os modos de jogo.</span>
-                    <img src="res/screenshots/score-and-time-sliders.png" alt="score-and-time-sliders">
+                    <img class="screenshot" src="res/screenshots/score-and-time-sliders.png" alt="score-and-time-sliders">
                     <span lang="en">The current limits for the match are displayed in the top right corner of the screen.</span>
                     <span lang="pt">Os limites definidos na partida atual são exibidos no canto superior direito da tela.</span>
-                    <img src="res/screenshots/score-and-time-hud.png" alt="score-and-time-hud">
-                    <span lang="en">Displays a banner and plays duke music when a player reaches the defined score amount or when the time limit is hit. When the banner is displayed, all players scores are blocked and the flag on CTF modes can't be captured.</span>
-                    <span lang="pt">Exibe um aviso e toca a musica do duke quando um jogador alcança o a pontuação definida ou quando o limite de tempo é atingido. Quando o aviso é exibido, a pontução de todos os jogadores fica bloqueada e a bandeira dos modos CTF não pode ser capturada.</span>
-                    <img src="res/screenshots/score-and-time-banner.png" alt="score-and-time-banner">
+                    <img class="screenshot" src="res/screenshots/score-and-time-hud.png" alt="score-and-time-hud">
+                    <span lang="en">A banner is displayed and duke music is played when a player reaches the defined score amount or when the time limit is hit. When the banner is displayed, all players scores are blocked and the flag on CTF modes can't be captured.</span>
+                    <span lang="pt">Um aviso é exibido e a musica do duke é tocada quando um jogador alcança o a pontuação definida ou quando o limite de tempo é atingido. Quando o aviso é exibido, a pontução de todos os jogadores fica bloqueada e a bandeira dos modos CTF não pode ser capturada.</span>
+                    <img class="screenshot" src="res/screenshots/score-and-time-banner.png" alt="score-and-time-banner">
 
                 </div>
 
@@ -895,7 +1058,24 @@
                         <a href="#death-notifications">#</a>
                     </h2>
             
-                    </div>
+                </div>
+            
+            </section>
+            
+            <hr>
+
+            <section id="new-fragbar-modes-section">
+            
+                <div class="flex-rows flex-gap-32">
+            
+                    <h2>
+                        <span id="new-fragbar-modes"></span>
+                        <span lang="en">New FragBar Modes</span>
+                        <span lang="pt">Novos Modos de FragBar</span>
+                        <a href="#new-fragbar-modes">#</a>
+                    </h2>
+            
+                </div>
             
             </section>
             
@@ -912,7 +1092,7 @@
                         <a href="#new-mini-hud">#</a>
                     </h2>
             
-                    </div>
+                </div>
             
             </section>
             
@@ -1426,6 +1606,26 @@
                 <span lang="pt">PARA DESENVOLVEDORES</span>            
             </h1>
             
+            <section id="mapping-guide">
+            
+                <div class="flex-rows flex-gap-32">
+            
+                    <h2>
+                        <span id="mapping-guide"></span>
+                        <span lang="en">Mapping Guide</span>
+                        <span lang="pt">Guia para Criar Mapas</span>
+                        <a href="#mapping-guide">#</a>
+                    </h2>
+
+                    <span lang="en">The flag uses picnum 5888, contained in TILES023.ART file.</span>
+                    <span lang="pt">A bandeira usa o picnum 5888, contido no arquivo TILES023.ART.</span>
+            
+                </div>
+            
+            </section>
+
+            <hr>
+            
             <section id="command-line-arguments-section">
             
                 <div class="flex-rows flex-gap-32">
@@ -1437,7 +1637,7 @@
                         <a href="#command-line-arguments">#</a>
                     </h2>
             
-                    </div>
+                </div>
             
             </section>
             
@@ -1454,7 +1654,7 @@
                         <a href="#console-commands">#</a>
                     </h2>
             
-                    </div>
+                </div>
             
             </section>
         

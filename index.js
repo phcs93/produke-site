@@ -28,36 +28,38 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     document.body.onscroll = e => {
 
-        const ratios = [];
+        // by chatgpt
+        const getTopMostVisibleElement = (elements) => {
+            
+            let topmostElement = null;
+            let smallestTopOffset = Infinity;
+        
+            elements.forEach(element => {
 
-        sections.forEach(s => {
-
-            const getVisibilityPercentage = (element) => {
                 const rect = element.getBoundingClientRect();
-                const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-                const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-                const visibleHeight = Math.max(0, Math.min(rect.bottom, viewportHeight) - Math.max(rect.top, 0));
-                const visibleWidth = Math.max(0, Math.min(rect.right, viewportWidth) - Math.max(rect.left, 0));
-                const visibleArea = visibleHeight * visibleWidth;
-                const elementArea = rect.width * rect.height;            
-                return (visibleArea / elementArea) * 100;
-            };
+        
+                // check if the element is in the viewport
+                if (rect.bottom > 51 /*my fixed header*/ && rect.top < window.innerHeight) {
+                    if (rect.top < smallestTopOffset) {
+                        smallestTopOffset = rect.top;
+                        topmostElement = element;
+                    }
+                }
 
-            ratios.push({
-                id: s.id.replace("-section", ""),
-                visibility: getVisibilityPercentage(s)
             });
+        
+            return topmostElement;
 
-        });
+        };
 
-        const highest = ratios.reduce((a, b) => (b && b.visibility > a.visibility) ? b : a);
+        const topMostId = getTopMostVisibleElement(sections).id.replace("-section", "");
 
         document.querySelectorAll("div.menu li").forEach(e => e.classList.remove("highlight"));
-        const li = document.querySelector(`a[href="#${highest.id}"]`).closest("li");
+        const li = document.querySelector(`a[href="#${topMostId}"]`).closest("li");
         li.classList.add("highlight");
         li.scrollIntoView({
             block: "nearest"
-        })
+        });
 
     };
 

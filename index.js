@@ -28,6 +28,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     document.body.onscroll = e => {
 
+        const target = e.target.scrollingElement || document.documentElement;
+
+        if (target.scrollTop <= 0) return;
+
         // by chatgpt
         const getTopMostVisibleElement = (elements) => {
             

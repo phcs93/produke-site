@@ -45,6 +45,25 @@ pre {
     background-color: #1E1E1E;
 }
 
+table {
+
+    text-align: center;
+    border-collapse: collapse; 
+
+    & thead {
+        font-family: "Candara";
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    & tr {        
+        border: none;
+        border-bottom: 1px solid #2C2C2C;
+        height: 32px;
+    }
+
+}
+
 div.box {
     background-color: #0E0E0E;
     border-radius: 10px;

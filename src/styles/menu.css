@@ -59,6 +59,10 @@ div.menu {
         border-radius: 10px;
     }
 
+    @media (pointer:none), (pointer:coarse) {
+        display: none;
+    }
+
 }
 
 /* hack to make anchors work even with the fixed navbar on top */

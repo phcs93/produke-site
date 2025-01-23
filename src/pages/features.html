@@ -82,6 +82,12 @@
                             <span lang="pt">Visão Noturna Inteligente</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="#team-scorebar-modes">
+                            <span lang="en">Team ScoreBar Modes</span>
+                            <span lang="pt">Modos de ScoreBar de Time</span>
+                        </a>
+                    </li>
                 </ul>
             </li>  
             <!-- gameplay improvements -->
@@ -158,12 +164,6 @@
                         <a href="#death-notifications">
                             <span lang="en">Death Notifications</span>
                             <span lang="pt">Notificações de Mortes</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#new-fragbar-modes">
-                            <span lang="en">New FragBar Modes</span>
-                            <span lang="pt">Novos Modos de FragBar</span>
                         </a>
                     </li>
                     <li>
@@ -419,7 +419,6 @@
             </li>
         </ul>
     </div>
-
 
     <div class="flex-rows flex-gap-32">
         
@@ -692,12 +691,17 @@
                     
                     <span lang="en">You can define a score or a time limit for a match in the menu <pre>Netplay Options > Score Limit / Time Limit</pre>. It works on all game modes.</span>
                     <span lang="pt">Você pode definir um limite de pontuação ou de tempo para uma partida no menu <pre>Netplay Options > Score Limit / Time Limit</pre>. Funciona em todos os modos de jogo.</span>
+
                     <img class="screenshot" src="res/screenshots/score-and-time-sliders.png" alt="score-and-time-sliders">
-                    <span lang="en">The current limits for the match are displayed on the top right corner of the screen.</span>
-                    <span lang="pt">Os limites definidos na partida atual são exibidos no canto superior direito da tela.</span>
+
+                    <span lang="en">The current limits for the match are displayed on the top right corner of the screen. The <a href="#in-game-clock">in-game clock</a> option needs to be enabled for it to show up</span>
+                    <span lang="pt">Os limites definidos na partida atual são exibidos no canto superior direito da tela. O <a href="#in-game-clock">relógio da partida</a> precisa estar habilitado para que isso apareça.</span>
+
                     <img class="screenshot" src="res/screenshots/score-and-time-hud.png" alt="score-and-time-hud">
+
                     <span lang="en">A banner is displayed and the Duke theme is played when a player reaches the defined score amount or when the time limit is hit. When the banner is displayed, all players scores are blocked and the flag on CTF modes can't be captured.</span>
                     <span lang="pt">Um aviso é exibido e a musica do Duke é tocada quando um jogador alcança a pontuação definida ou quando o limite de tempo é atingido. Quando o aviso é exibido, a pontuação de todos os jogadores fica bloqueada e a bandeira dos modos CTF não pode ser capturada.</span>
+
                     <img class="screenshot" src="res/screenshots/score-and-time-banner.png" alt="score-and-time-banner">
 
                 </div>
@@ -716,7 +720,6 @@
             <span lang="en">There are various optional features to make teamplay more fluid.</span>
             <span lang="pt">Existem vários recursos opcionais para fazer os jogos de times ficarem mais fluidos.</span>
 
-            <!-- outlines -->
             <section id="team-outlines-section">
 
                 <div class="flex-rows flex-gap-32">
@@ -1124,6 +1127,66 @@
                 </div>
             
             </section>
+
+            <hr>
+
+            <section id="team-scorebar-modes-section">
+            
+                <div class="flex-rows flex-gap-32">
+            
+                    <h2>
+                        <span id="team-scorebar-modes"></span>
+                        <span lang="en">Team ScoreBar Modes</span>
+                        <span lang="pt">Modos da ScoreBar de Time</span>
+                        <a href="#team-scorebar-modes">#</a>
+                    </h2>
+
+                    <span lang="en">You can choose between three team scorebar modes in the menu <pre>Options > HUD/Menu Setup > Team ScoreBar</pre>.</span>
+                    <span lang="pt">Você pode selecionar entre três modos de scorebar de times no menu <pre>Options > HUD/Menu Setup > Team ScoreBar</pre>.</span>
+
+                    <img src="res/screenshots/fragbar-1.png" alt="fragbar" class="screenshot">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <span lang="en">MODE</span>
+                                    <span lang="pt">MODO</span>
+                                </th>
+                                <th>
+                                    <span lang="en">DESCRIPTION</span>
+                                    <span lang="pt">DESCRIÇÃO</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>FULL</td>
+                                <td>
+                                    <span lang="en">In this mode you can see each players' scores and a separate bar at the bottom shows the total score of each team.</span>
+                                    <span lang="pt">Nesse modo você pode ver a pontução de cada jogador e uma barra inferior separada que mostra a pontuação total de cada time.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SHARED</td>
+                                <td>
+                                    <span lang="en">In this mode all players in the team will share the same score. There will be no separate team scorebar.</span>
+                                    <span lang="pt">Nesse modo, todos os jogadores do time compartilharão a mesma pontuação. Não será exibida a barra de pontuação do time.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MINIMALIST </td>
+                                <td>
+                                    <span lang="en">In this mode, only the team scorebar will be shown. This is useful as it occupies less space in the screen.</span>
+                                    <span lang="pt">Nesse modo, apenas a barra de pontuação do time fica visível. Ocupando menos espaço na tela.</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            
+                </div>
+            
+            </section>
             
         </div>
 
@@ -1146,7 +1209,7 @@
                     </h2>
                     
                     <span lang="en">You can choose your color in non-team based modes at the menu <pre>Options > Player Setup > Color</pre>.</span>
-                    <span lang="pt">Você pode escolher a sua cor em modos não baseados em times no menu <pre>Options > Player Setup > Colo</pre>.</span>
+                    <span lang="pt">Você pode escolher a sua cor em modos não baseados em times no menu <pre>Options > Player Setup > Color</pre>.</span>
             
                     <span lang="en">You can force the game to show others players with the default automatic sequential colors in the menu <pre>Options > Player Setup > Force Auto</pre>.</span>
                     <span lang="pt">Você pode forçar o jogo a exibir os outros jogadores com as cores automáticas padrões sequencias no menu <pre>Options > Player Setup > Force Auto</pre>.</span>
@@ -1251,7 +1314,7 @@
                     </h2>
 
                     <span lang="en">You can see a player's name when aiming at them. You can disable this feature for everyone on the match at the menu <pre>Netplay Options > NetFlags > No Target Names</pre>. Or disable it only to yourself at the menu <pre>Options > Game Options > Target Names</pre>.</span>
-                    <span lang="pt">Você pode ver o nome de um jogador quando mirar nele. Você pode desabilitar esse recurso para todos na partida pelo menu <pre>Netplay Options > NetFlags > No Target Names</pre>. Or desabilitar somente para você mesmo pelo menu <pre>Options > Game Options > Target Names</pre>.</span>
+                    <span lang="pt">Você pode ver o nome de um jogador quando mirar nele. Você pode desabilitar esse recurso para todos na partida pelo menu <pre>Netplay Options > NetFlags > No Target Names</pre>. Ou desabilitar somente para você mesmo pelo menu <pre>Options > Game Options > Target Names</pre>.</span>
 
                     <img src="res/screenshots/target-names.png" alt="target names" class="screenshot">
             
@@ -1290,7 +1353,7 @@
                     </h2>
 
                     <span lang="en">You can make players always drop their weapons when they die by enabling the netflag <pre>Netplay Options > NetFlags > Weapon Always Drops On Kill</pre>.</span>
-                    <span lang="pt">Você fazer os jogadores sempre derrubarem a arma quando morrer habilitando a netflag <pre>Netplay Options > NetFlags > Weapon Always Drops On Kill</pre>.</span>
+                    <span lang="pt">Você pode fazer os jogadores sempre derrubarem a arma quando morrer habilitando a netflag <pre>Netplay Options > NetFlags > Weapon Always Drops On Kill</pre>.</span>
             
                 </div>
             
@@ -1428,24 +1491,7 @@
                 </div>
             
             </section>
-            
-            <hr>
-
-            <section id="new-fragbar-modes-section">
-            
-                <div class="flex-rows flex-gap-32">
-            
-                    <h2>
-                        <span id="new-fragbar-modes"></span>
-                        <span lang="en">New FragBar Modes</span>
-                        <span lang="pt">Novos Modos de FragBar</span>
-                        <a href="#new-fragbar-modes">#</a>
-                    </h2>
-            
-                </div>
-            
-            </section>
-            
+                        
             <hr>
             
             <section id="new-mini-hud-section">
@@ -1458,6 +1504,45 @@
                         <span lang="pt">Nova Mini HUD</span>
                         <a href="#new-mini-hud">#</a>
                     </h2>
+
+                    <span lang="en">New mini HUD that shows all inventory, all weapons, keycards and your current color.</span>
+                    <span lang="pt">Nova mini HUD que exibe todo o inventário, todas as armas, keycards e sua cor atual.</span>
+
+                    <img src="res/screenshots/mini-hud.png" alt="new mini hud" class="screenshot">
+
+                    <span lang="en">The weapon colors means:</span>
+                    <span lang="pt">A cor nas armas quer dizer:</span>
+
+                    <div class="flex-columns flex-gap-32 flex-justify-content-center">
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/has-weapon.png" alt="has weapon">
+                            <label class="badge">
+                                <span lang="en">EQUIPED WEAPON</span>
+                                <span lang="pt">ARMA EQUIPADA</span>
+                            </label>
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/has-weapon-and-ammo.png" alt="has weapon and ammo">
+                            <label class="badge">
+                                <span lang="en">HAS WEAPON AND AMMO</span>
+                                <span lang="pt">TEM ARMA E MUNIÇÃO</span>
+                            </label>                                
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/has-weapon-no-ammo.png" alt="has weapon no ammo">
+                            <label class="badge">
+                                <span lang="en">HAS WEAPON NO AMMO</span>
+                                <span lang="pt">TEM ARMA SEM MUNIÇÃO</span>
+                            </label>     
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/no-weapon.png" alt="no weapon">
+                            <label class="badge">
+                                <span lang="en">DOESN'T HAVE WEAPON</span>
+                                <span lang="pt">NÃO TEM A ARMA</span>
+                            </label>                                
+                        </div>
+                    </div>
             
                 </div>
             
@@ -1475,8 +1560,38 @@
                         <span lang="pt">Seletor de Miras</span>
                         <a href="#crosshair-selector">#</a>
                     </h2>
-            
+
+                    <span lang="en">You can change your crosshair in the menu <pre>Options > HUD/Menu Setup > Crosshair</pre>.</span>
+                    <span lang="pt">Você pode mudar sua mira no menu <pre>Options > HUD/Menu Setup > Crosshair</pre>.</span>
+
+                    <span lang="en">The available crosshair tiles are:</span>
+                    <span lang="pt">Os tiles de mira disponíveis são:</span>
+
+                    <div class="flex-columns flex-gap-32 flex-justify-content-center">
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/crosshair-cross.png" alt="cross">
+                            <label class="badge">
+                                <span lang="en">CROSS</span>
+                                <span lang="pt">CRUZ</span>
+                            </label>
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/crosshair-circle.png" alt="circle">
+                            <label class="badge">
+                                <span lang="en">CIRCLE</span>
+                                <span lang="pt">CÍRCULO</span>
+                            </label>                                
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 8px; padding: 16px;" class="sprite" src="res/sprites/crosshair-dot.png" alt="dot">
+                            <label class="badge">
+                                <span lang="en">DOT</span>
+                                <span lang="pt">PONTO</span>
+                            </label>     
+                        </div>
                     </div>
+            
+                </div>
             
             </section>
             
@@ -1492,8 +1607,11 @@
                         <span lang="pt">Relógio da Partida</span>
                         <a href="#in-game-clock">#</a>
                     </h2>
+
+                    <span lang="en">A simple clock that shows the current match duration. Displayed at the top right corner of the screen. Can be enable in the menu <pre>Options > HUD/Menu Setup > Show Clock</pre>.</span>
+                    <span lang="pt">Um relógio simples que mostra a duração da partida atual. Exibido no canto superior direito da tela. Pode ser habilitado no menu <pre>Options > HUD/Menu Setup > Show Clock</pre>.</span>
             
-                    </div>
+                </div>
             
             </section>
             

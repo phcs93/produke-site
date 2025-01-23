@@ -64,6 +64,11 @@ table {
 
 }
 
+/* small hack to fix <pre> overlaping */
+:not(a):not(label):not(h1):not(h2):not(h3) > span {
+    line-height: 22px;
+}
+
 div.box {
     background-color: #0E0E0E;
     border-radius: 10px;

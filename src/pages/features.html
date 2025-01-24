@@ -167,9 +167,21 @@
                         </a>
                     </li>
                     <li>
+                        <a href="#colored-chat">
+                            <span lang="en">Colored Chat</span>
+                            <span lang="pt">Chat Colorido</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="#new-mini-hud">
                             <span lang="en">New Mini HUD</span>
                             <span lang="pt">Nova Mini HUD</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#player-name-on-hud">
+                            <span lang="en">Player Name on HUD</span>
+                            <span lang="pt">Nome do Jogador na HUD</span>
                         </a>
                     </li>
                     <li>
@@ -195,13 +207,7 @@
                             <span lang="en">New AutoMap Modes</span>
                             <span lang="pt">Novos Modos de AutoMap</span>
                         </a>
-                    </li>
-                    <li>
-                        <a href="#player-name-on-hud">
-                            <span lang="en">Player Name on HUD</span>
-                            <span lang="pt">Nome do Jogador na HUD</span>
-                        </a>
-                    </li>
+                    </li>                    
                 </ul>
             </li>
             <!-- menu improvements -->
@@ -1493,6 +1499,28 @@
             </section>
                         
             <hr>
+
+            <section id="colored-chat-section">
+            
+                <div class="flex-rows flex-gap-32">
+            
+                    <h2>
+                        <span id="colored-chat"></span>
+                        <span lang="en">Colored Chat</span>
+                        <span lang="pt">Chat Colorido</span>
+                        <a href="#colored-chat">#</a>
+                    </h2>
+
+                    <span lang="en">The chat will be colored according to the player color who sent the message.</span>
+                    <span lang="pt">O chat será colorido conforme a cor do player que enviou a mensagem.</span>
+
+                    <img src="res/screenshots/colroed-chat.png" alt="colore chat" class="screenshot">
+                    
+                </div>
+            
+            </section>
+
+            <hr>
             
             <section id="new-mini-hud-section">
             
@@ -1543,6 +1571,28 @@
                             </label>                                
                         </div>
                     </div>
+            
+                </div>
+            
+            </section>
+
+            <hr>
+            
+            <section id="player-name-on-hud-section">
+            
+                <div class="flex-rows flex-gap-32">
+            
+                    <h2>
+                        <span id="player-name-on-hud"></span>
+                        <span lang="en">Player Name on HUD</span>
+                        <span lang="pt">Nome do Jogador na HUD</span>
+                        <a href="#player-name-on-hud">#</a>
+                    </h2>
+
+                    <span lang="en">When using "see coop view" or wathcing a DEMO, the player name will be shown above the health HUD.</span>
+                    <span lang="pt">Quando estiver utilizando o "see coop view" ou assistindo a uma DEMO, o nome do jogador será exibido acima do HUD de vida.</span>
+
+                    <img src="res/screenshots/player-name-on-hud.png" alt="new mini hud" class="screenshot">
             
                 </div>
             
@@ -1627,8 +1677,65 @@
                         <span lang="pt">Novos Modos de SpyCam</span>
                         <a href="#new-spycam-modes">#</a>
                     </h2>
+
+                    <span lang="en">You can set the spycam key between "toggle", "held" and "classic" mode in the <pre>Options > Game Options > SpyCam Mode</pre>.</span>
+                    <span lang="pt">Você pode configurar a tecla do spycam entre os modos "segurar", "alternar" e "classico" no menu <pre>Options > Game Options > SpyCam Mode</pre>.</span>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <span lang="en">MODE</span>
+                                    <span lang="pt">MODO</span>                
+                                </th>
+                                <th>
+                                    <span lang="en">ORDER</span>
+                                    <span lang="pt">ORDEM</span>  
+                                </th>
+                                <th>
+                                    <span lang="en">DESCRIPTION</span>
+                                    <span lang="pt">DESCRIÇÃO</span>  
+                                </th>                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>TOGGLE</td>
+                                <td>
+                                    <span lang="en">Interleaved</span>
+                                    <span lang="pt">Intercalado</span>
+                                </td>
+                                <td>
+                                    <span lang="en">In this mode, when pressing the key,you will se a teammate's view, and back to your view when pressing it again. On pressing the key <strong style="color: var(--progold);">again</strong>, you will see the next teammate's view, and so on.</span>
+                                    <span lang="pt">Neste modo, ao pressionar a tecla, você verá a visão de um aliado, e quando apertar de novo, verá de volta a sua propria visão. Ao pressionar o botão <strong style="color: var(--progold);">novamente</strong>, você verá a visão do próximo aliado, e assim por diante.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>HELD</td>
+                                <td>
+                                    <span lang="en">Interleaved</span>
+                                    <span lang="pt">Intercalado</span>
+                                </td>
+                                <td>
+                                    <span lang="en">In this mode, while holding the key,you will se a teammate's view, and back to your view when releasing. On holding the key <strong style="color: var(--progold);">again</strong>, you will see the next teammate's view, and so on.</span>
+                                    <span lang="pt">Neste modo, ao segurar a tecla, você verá a visão de um aliado, e quando soltar, verá de volta a sua propria visão. Ao segurar o botão <strong style="color: var(--progold);">novamente</strong>, você verá a visão do próximo aliado, e assim por diante.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>CLASSIC</td>
+                                <td>
+                                    <span lang="en">Sequential</span>
+                                    <span lang="pt">Sequencial</span>
+                                </td>
+                                <td>
+                                    <span lang="en">Original mode, pressing the key will show each teammates' screens, until you get back to your own view again.</span>
+                                    <span lang="pt">Modo original, pressionar a tecla vai mostrar a tela de cada um dos aliados, até que você volte para a sua visão novamente.</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
             
-                    </div>
+                </div>
             
             </section>
             
@@ -1644,25 +1751,49 @@
                         <span lang="pt">Novos Modos de AutoMap</span>
                         <a href="#new-automap-modes">#</a>
                     </h2>
+
+                    <span lang="en">You can set the automap key between "held" and "toggle" mode in the menu <pre>Options > HUD/Menu Setup > Automap Mode</pre>.</span>
+                    <span lang="pt">Você pode configurar a tecla do automap entre os modos "segurar" e "alternar" no menu <pre>Options > HUD/Menu Setup > Automap Mode</pre>.</span>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <span lang="en">MODE</span>
+                                    <span lang="pt">MODO</span>                
+                                </th>
+                                <th>
+                                    <span lang="en">DESCRIPTION</span>
+                                    <span lang="pt">DESCRIÇÃO</span>  
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>TOGGLE</td>
+                                <td>
+                                    <span lang="en">Just like the original game, you have to press the key multiple times to switch between all automap views.</span>
+                                    <span lang="pt">Igual ao jogo original, você precisa apertar a tecla multiplas vezes para alternar entre as visualizações do automap.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>HELD/WIRE</td>
+                                <td>
+                                    <span lang="en">In this mode, while holding the key, the map will be shown (just the lines), and on releasing the key, the map is hidden again.</span>
+                                    <span lang="pt">Neste modo, ao segurar a tecla, o mapa é exibido (apenas ds linhas), e ao soltar, o mapa é ocultado.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>HELD/TEX</td>
+                                <td>
+                                    <span lang="en">In this mode, while holding the key, the map will be shown (with textures), and on releasing the key, the map is hidden again.</span>
+                                    <span lang="pt">Neste modo, ao segurar a tecla, o mapa é exibido (com texturas), e ao soltar, o mapa é ocultado.</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
             
-                    </div>
-            
-            </section>
-            
-            <hr>
-            
-            <section id="player-name-on-hud-section">
-            
-                <div class="flex-rows flex-gap-32">
-            
-                    <h2>
-                        <span id="player-name-on-hud"></span>
-                        <span lang="en">Player Name on HUD</span>
-                        <span lang="pt">Nome do Jogador na HUD</span>
-                        <a href="#player-name-on-hud">#</a>
-                    </h2>
-            
-                    </div>
+                </div>
             
             </section>
             

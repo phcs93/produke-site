@@ -299,15 +299,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#nightvision-maxed-glow">
-                            <span lang="en">NightVision Maxed Glow</span>
-                            <span lang="pt">Brilho Máximo com Visão Noturna</span>
-                        </a>
-                    </li>
-                    <li>
                         <a href="#faster-devastator-projectiles">
                             <span lang="en">Faster Devastator Projectiles</span>
-                            <span lang="pt">Projéteis da Davastator mais Rápidos</span>
+                            <span lang="pt">Projéteis da Devastator mais Rápidos</span>
                         </a>
                     </li>
                     <li>
@@ -1843,7 +1837,7 @@
                     </h2>
 
                     <span lang="en">Now, under <pre>Netplay Options</pre>, there is a new menu called <pre>NetFlags</pre>. You can toggle on/off most of the new features through here. Also, some of the original game options (shown in white) have been moved to here, like setting wheter the match will be "spawn" or "no spawn", coop friendly fire, starting with keycards or not, etc.</span>
-                    <span lang="pt">Agora, dentro do menu <pre>Netplay Options</pre>, existe um novo menu chamado <pre>NetFlags</pre>. Você ligar/desligar a maioria das novas funcionalidades por aqui. E também, algumas das opções originais do jogo (exibidas em branco) foram movidas para cá, como configurar se a partida vai ser "spawn" ou "no spawn", fogo amigo no coop, começar a partida com os keycards ou não, etc.</span>
+                    <span lang="pt">Agora, dentro do menu <pre>Netplay Options</pre>, existe um novo menu chamado <pre>NetFlags</pre>. Você pode ligar/desligar a maioria das novas funcionalidades por aqui. E também, algumas das opções originais do jogo (exibidas em branco) foram movidas para cá, como configurar se a partida vai ser "spawn" ou "no spawn", fogo amigo no coop, começar a partida com os keycards ou não, etc.</span>
 
                     <span lang="en">The number shown above the menu is a <strong style="color: var(--progold);">bitfield</strong> representing all enabled flags, go to <a href="#command-line-arguments">command line arguments</a> to learn more.</span>
                     <span lang="pt">O número exibido acima do menu é um <strong style="color: var(--progold);">bitfield</strong> que representa todas as flags habilitadas, vá para <a href="#command-line-arguments">argumentos de linha de comando</a> para entender mais.</span>
@@ -2059,29 +2053,12 @@ MAPDir = "../maps"</pre>
                         <a href="#nightvision-full-visibility">#</a>
                     </h2>
 
-                    <span lang="en">Nightvision will ignore all sectors visibility and make everything fully visible. In the original game, all it does is set a different palette.</span>
-                    <span lang="pt">A visão noturna vai ignorar a visibilidade de todos os setores e deixar tudo completamente visivel. No jogo original, ela apenas troca a paleta dos setores e sprites.</span>
+                    <span lang="en">Nightvision will ignore all sectors visibility and make everything fully visible and set shade to max. In the original game, all it does is set a different palette.</span>
+                    <span lang="pt">A visão noturna vai ignorar a visibilidade de todos os setores e deixar tudo completamente visivel e com o shade no máximo. No jogo original, ela apenas troca a paleta dos setores e sprites.</span>
                     
                     <img src="res/screenshots/rebalanced-nightvision.gif" alt="rebalanced nightvision" class="screenshot">
             
                 </div>
-            
-            </section>
-            
-            <hr>
-            
-            <section id="nightvision-maxed-glow-section">
-            
-                <div class="flex-rows flex-gap-32">
-            
-                    <h2>
-                        <span id="nightvision-maxed-glow"></span>
-                        <span lang="en">NightVision Maxed Glow</span>
-                        <span lang="pt">Brilho Máximo com Visão Noturna</span>
-                        <a href="#nightvision-maxed-glow">#</a>
-                    </h2>
-            
-                    </div>
             
             </section>
             
@@ -2094,11 +2071,15 @@ MAPDir = "../maps"</pre>
                     <h2>
                         <span id="faster-devastator-projectiles"></span>
                         <span lang="en">Faster Devastator Projectiles</span>
-                        <span lang="pt">Projéteis da Davastator mais Rápidos</span>
+                        <span lang="pt">Projéteis da Devastator mais Rápidos</span>
                         <a href="#faster-devastator-projectiles">#</a>
                     </h2>
+
+                    <span lang="en">Devastator projectiles will move a little faster. The ammount of projectiles shot per second remains the same.</span>
+                    <span lang="pt">Os projeteis da devastator vão se mover um pouco mais rápido. A quantidade de projéteis atirados por segundo continua a mesma.</span>
             
-                    </div>
+            
+                </div>
             
             </section>
             
@@ -2114,8 +2095,11 @@ MAPDir = "../maps"</pre>
                         <span lang="pt">Debuff de Velocidade da Freezer</span>
                         <a href="#freezer-speed-debuff">#</a>
                     </h2>
+
+                    <span lang="en">The freezethrower will cause a small temporary debuff that reduces the speed of who is hit.</span>
+                    <span lang="pt">A freezethrower vai causar um pequeno debuff temporario que reduz a velocidade de quem foi atingido.</span>
             
-                    </div>
+                </div>
             
             </section>
             
@@ -2131,8 +2115,11 @@ MAPDir = "../maps"</pre>
                         <span lang="pt">Botas Negam o Debuff da Freezer</span>
                         <a href="#boots-negates-freezer">#</a>
                     </h2>
+
+                    <span lang="en">Boots will make you immune to the new freezer debuff and be consumed a little.</span>
+                    <span lang="pt">As botas te farão imune ao novo debuff da freezer e serão levemente consumidas.</span>
             
-                    </div>
+                </div>
             
             </section>
             
@@ -2148,8 +2135,11 @@ MAPDir = "../maps"</pre>
                         <span lang="pt">Botas Diminuem o Dano de Queda pela Metade</span>
                         <a href="#boots-halves-fall-damge">#</a>
                     </h2>
+
+                    <span lang="en">Boots will halve fall damage and be consumed depending on the ammount of supressed damage.</span>
+                    <span lang="pt">As botas vão diminuir o dano de queda pela metade e serão consumidas dependendo da quantidade de dano suprimido.</span>
             
-                    </div>
+                </div>
             
             </section>
             
@@ -2165,8 +2155,11 @@ MAPDir = "../maps"</pre>
                         <span lang="pt">HoloDuke Ativa a Mira Automática</span>
                         <a href="#holoduke-triggers-autoaim">#</a>
                     </h2>
+
+                    <span lang="en">Autoaim will aim at holodukes. It will not aim at your own holoduke. If playing team based modes with smart autoaim enabled, autoaim will ignore allied holodukes. The ideia is that holodukes can be used as a better decoy.</span>
+                    <span lang="pt">A mira automática vai mirar em holodukes. Ela não vai mirar no seu proprio holoduke. Se você estiver jogando um modo baseado em times e a mira automática inteligente estiver habilitada, a mirá automática vai ignorar holodukes aliados. A idéia é que os holodukes possam ser utilizados como uma distração melhor.</span>
             
-                    </div>
+                </div>
             
             </section>
             

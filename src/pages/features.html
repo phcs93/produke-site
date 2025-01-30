@@ -396,6 +396,33 @@
                     </li>
                 </ul>
             </li>
+            <!-- mapping guide -->
+            <li>
+                <strong>
+                    <span lang="en">MAPPING GUIDE</span>
+                    <span lang="pt">GUIA PARA CRIAR MAPAS</span>
+                </strong>
+                <ul>
+                    <li>
+                        <a href="#mapping-guide-team-spawn-points">
+                            <span lang="en">Team Spawn Points</span>
+                            <span lang="pt">Pontos de Nascimento de Time</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#spawn-order">
+                            <span lang="en">Spawn Order</span>
+                            <span lang="pt">Ordem de Nascimento</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#flags">
+                            <span lang="en">Flags</span>
+                            <span lang="pt">Bandeiras</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
             <!-- for developers -->
             <li>
                 <strong>
@@ -403,12 +430,6 @@
                     <span lang="pt">PARA DESENVOLVEDORES</span>
                 </strong>
                 <ul>
-                    <li>
-                        <a href="#mapping-guide">
-                            <span lang="en">Mapping Guide</span>
-                            <span lang="pt">Guia para Criar Mapas</span>
-                        </a>
-                    </li>
                     <li>
                         <a href="#command-line-arguments">
                             <span lang="en">Command Line Arguments</span>
@@ -2187,8 +2208,11 @@ MAPDir = "../maps"</pre>
                         <span lang="pt">Imunidade aos Projéteis de Freezer</span>
                         <a href="#freezer-shot-immunity">#</a>
                     </h2>
+
+                    <span lang="en">Freezethrower shots will not hurt the player who shot the projectile. You can enable this at the menu <pre>Netplay Options > NetFlags > Freezer shots can't hurt owner</pre>.</span>
+                    <span lang="pt">Os tiros da freezethrower não vão inflingir dano no jogador que atirou o projétil. Isso pode ser habilitado no menu <pre>Netplay Options > NetFlags > Freezer shots can't hurt owner</pre>.</span>
             
-                    </div>
+                </div>
             
             </section>
             
@@ -2204,8 +2228,11 @@ MAPDir = "../maps"</pre>
                         <span lang="pt">Câmeras Destrutíveis</span>
                         <a href="#destructable-cameras">#</a>
                     </h2>
+
+                    <span lang="en">You will be able to destroy cameras. You can enable this at the menu <pre>Netplay Options > NetFlags > Destructable Cameras</pre>.</span>
+                    <span lang="pt">Você poderá destruir cameras. Isso pode ser habilitado no menu <pre>Netplay Options > NetFlags > Destructable Cameras</pre>.</span>
             
-                    </div>
+                </div>
             
             </section>
             
@@ -2221,8 +2248,13 @@ MAPDir = "../maps"</pre>
                         <span lang="pt">Laser das TripBombs Invisivel</span>
                         <a href="#invisible-tripbomb-laser">#</a>
                     </h2>
+
+                    <span lang="en">Tripbombs laserline will only be visible when using nightvision. This can be enabled at the menu <pre>Netplay Options > NetFlags > LaserInvisible W/O Nightvision</pre>.</span>
+                    <span lang="pt">O laser das tripbombs só ficará visivel quando estiver utilizando a visão noturna. Isso pode ser habilitado no menu <pre>Netplay Options > NetFlags > LaserInvisible W/O Nightvision</pre>.</span>
+
+                    <img src="res/screenshots/invisible-laserlines.gif" alt="invisible laserline" class="screenshot">
             
-                    </div>
+                </div>
             
             </section>
             
@@ -2235,8 +2267,8 @@ MAPDir = "../maps"</pre>
                 <span lang="pt">CORREÇÕES DE BUGS ORIGINAIS</span>        
             </h1>
 
-            <span lang="en">Known bugs fixes from the original game.</span>
-            <span lang="pt">Correção de bugs conhecidos do jogo original.</span>
+            <span lang="en">Known bugs fixes from the original game (xDuke).</span>
+            <span lang="pt">Correção de bugs conhecidos do jogo original (xDuke).</span>
             
             <hr>
             
@@ -2250,8 +2282,11 @@ MAPDir = "../maps"</pre>
                         <span lang="pt">Correção da AutoAim da Expander </span>
                         <a href="#expander-autoaim-fix">#</a>
                     </h2>
+
+                    <span lang="en">Expander's auto-aim now works properly on the bullets only auto aim mode (now renamed to hitscan only).</span>
+                    <span lang="pt">Agora a mira automática da expander funciona no modo hitscan também.</span>
             
-                    </div>
+                </div>
             
             </section>
             
@@ -2264,11 +2299,14 @@ MAPDir = "../maps"</pre>
                     <h2>
                         <span id="expander-frag-fix"></span>
                         <span lang="en">Expander Frag Fix</span>
-                        <span lang="pt">Correção da Pontuação da Expander </span>
+                        <span lang="pt">Correção da Pontuação da Expander</span>
                         <a href="#expander-frag-fix">#</a>
                     </h2>
+
+                    <span lang="en">Now if you kill a player using the expander and the explosion kills another player, the score goes to the player who shot the expander, not the player who exploded.</span>
+                    <span lang="pt">Agora, se você matar um jogador usando a expander e a explosão matar outro jogador, o ponto vai para o jogador que atirou, e não para o jogador que explodiu.</span>            
             
-                    </div>
+                </div>
             
             </section>
             
@@ -2284,8 +2322,11 @@ MAPDir = "../maps"</pre>
                         <span lang="pt">Correção do Renascimento de Afogamento</span>
                         <a href="#drowning-respawn-fix">#</a>
                     </h2>
+
+                    <span lang="en">A player will no longer respawn already drowning if player was drowning when he last died.</span>
+                    <span lang="pt">O jogador não vai mais renascer já se afogando caso tenha morrido por afogamento anteriormente.</span>
             
-                    </div>
+                </div>
             
             </section>
             
@@ -2301,8 +2342,11 @@ MAPDir = "../maps"</pre>
                         <span lang="pt">Correção de TripBombs em Rampas</span>
                         <a href="#tripbomb-on-slopes-fix">#</a>
                     </h2>
+
+                    <span lang="en">Tripbombs will no longer be invisible if placed on certain sloped sectors. This can be enabled at the menu <pre>Netplay Options > NetFlags > Fix Tripbombs On Slopes</pre>.</span>
+                    <span lang="pt">Tripbombs não vão mais ficar invisíveis se colocadas em certos setores com rampa. Isso pode ser habilitado em <pre>Netplay Options > NetFlags > Fix Tripbombs On Slopes</pre>.</span>
             
-                    </div>
+                </div>
             
             </section>
 
@@ -2318,11 +2362,177 @@ MAPDir = "../maps"</pre>
                         <span lang="pt">Correção de Screenshots</span>
                         <a href="#screenshot-fix">#</a>
                     </h2>
+
+                    <span lang="en">Screenshot files were not being created if players' nicknames had invalid characters. This is fixed now and invalid characters will be replaced by an underline.</span>
+                    <span lang="pt">As screenshots não eram salvas caso algum jogador tivesse caracteres inválidos do nickname. Isso foi corrigido e agora os caracteres inválidos serão substituídos por um underline.</span>
             
                 </div>
             
             </section>
             
+        </div>
+
+        <div id="mapping-guide" class="content box flex-rows flex-gap-32">
+            
+            <h1>
+                <span lang="en">MAPPING GUIDE</span>
+                <span lang="pt">GUIA PARA CRIAR MAPAS</span>            
+            </h1>
+
+            <span lang="en">Information for how to use produke's new features on usermaps.</span>
+            <span lang="pt">Informações sobre como utilizar os recursos novos do produke em usermaps.</span>
+            
+            <hr>
+            
+            <section id="mapping-guide-team-spawn-points-section">
+            
+                <div class="flex-rows flex-gap-32">
+            
+                    <h2>
+                        <span id="mapping-guide-team-spawn-points"></span>
+                        <span lang="en">Team Spawn Points</span>
+                        <span lang="pt">Pontos de Nascimento de Time</span>
+                        <a href="#mapping-guide-team-spawn-points">#</a>
+                    </h2>
+
+                    <span lang="en">To create maps using team spawn points, all you have to do is set the Hi-Tag of the APLAYER (picnum #1405) sprites to a team number.</span>
+                    <span lang="pt">Para criar mapas usando os pontos de nascimento de times, basta setar a Hi-Tag da sprite APLAYER (picnum #1405) para o número de um time.</span>
+
+                    <span lang="en">The player one spawn point (set with pressing the scroll-lock key in mapster32) is not used in team based modes unless there are not enough team spawn points defined.</span>
+                    <span lang="pt">O ponto de nascimento do player um (setado apertando a tecla scoll-lock no mapster32) não é utilizado em modos baseados em times a não ser que não existam pontos de nascimento de time o suficiente.</span>
+
+                    <div class="flex-columns flex-gap-32 flex-justify-content-center">
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/player-team-1.png" alt="blue team - num 1 - pal 9" title="blue team - num 1 - pal 9">
+                            <label class="badge">
+                                <span lang="en">BLUE TEAM</span>
+                                <span lang="pt">TIME AZUL</span>
+                            </label>
+                            <label class="badge">HI-TAG = 1</label>
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/player-team-2.png" alt="red team - num 2 - pal 10" title="red team - num 2 - pal 10">
+                            <label class="badge">
+                                <span lang="en">RED TEAM</span>
+                                <span lang="pt">TIME VERMELHO</span>
+                            </label>
+                            <label class="badge">HI-TAG = 2</label>
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/player-team-3.png" alt="green team - num 3 - pal 11" title="green team - num 3 - pal 11">
+                            <label class="badge">
+                                <span lang="en">GREEN TEAM</span>
+                                <span lang="pt">TIME VERDE</span>
+                            </label>     
+                            <label class="badge">HI-TAG = 3</label>
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/player-team-4.png" alt="brown team - num 4 - pal 15" title="brown team - num 4 - pal 15">
+                            <label class="badge">
+                                <span lang="en">BROWN TEAM</span>
+                                <span lang="pt">TIME MARROM</span>
+                            </label>
+                            <label class="badge">HI-TAG = 4</label>
+                        </div>
+                    </div>
+
+                    <img src="res/screenshots/team-spawn-points.png" alt="team spawn points" class="screenshot" style="border: none;">
+            
+                </div>
+            
+            </section>
+
+            <hr>
+            
+            <section id="spawn-order-section">
+            
+                <div class="flex-rows flex-gap-32">
+            
+                    <h2>
+                        <span id="spawn-order"></span>
+                        <span lang="en">Spawn Order</span>
+                        <span lang="pt">Ordem de Nascimento</span>
+                        <a href="#spawn-order">#</a>
+                    </h2>
+
+                    <span lang="en"></span>
+                    <span lang="pt"></span>
+                    
+                    [PEGAR O SCRIPT QUE O FOX FEZ PRO NDUKE]
+                    https://web.archive.org/web/20180211075404/http://nduke.dukenukem.com.br/?p=mapping-guide
+            
+                </div>
+            
+            </section>
+
+            <hr>
+            
+            <section id="flags-section">
+            
+                <div class="flex-rows flex-gap-32">
+            
+                    <h2>
+                        <span id="flags"></span>
+                        <span lang="en">Flags</span>
+                        <span lang="pt">Bandeiras</span>
+                        <a href="#flags">#</a>
+                    </h2>
+            
+                    <span lang="en">The flags for CTF modes (picnum #5888 contained in TILES023.ART file) follow the same Hi-Tag rule.</span>
+                    <span lang="pt">As bandeiras para modos CTF (picnum #5888 contido no arquivo TILES023.ART) seguem a mesma regra de Hi-Tag.</span>
+
+                    <div class="flex-columns flex-gap-32 flex-justify-content-center">
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/flag-team-1.png" alt="blue team - num 1 - pal 9" title="blue team - num 1 - pal 9">
+                            <label class="badge">
+                                <span lang="en">BLUE FLAG</span>
+                                <span lang="pt">BANDEIRA AZUL</span>
+                            </label>
+                            <label class="badge">HI-TAG = 1</label>
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/flag-team-2.png" alt="red team - num 2 - pal 10" title="red team - num 2 - pal 10">
+                            <label class="badge">
+                                <span lang="en">RED FLAG</span>
+                                <span lang="pt">BANDEIRA VERMELHA</span>
+                            </label>        
+                            <label class="badge">HI-TAG = 2</label>                        
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/flag-team-3.png" alt="green team - num 3 - pal 11" title="green team - num 3 - pal 11">
+                            <label class="badge">
+                                <span lang="en">GREEN FLAG</span>
+                                <span lang="pt">BANDEIRA VERDE</span>
+                            </label>   
+                            <label class="badge">HI-TAG = 3</label>  
+                        </div>
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/flag-team-4.png" alt="brown team - num 4 - pal 15" title="brown team - num 4 - pal 15">
+                            <label class="badge">
+                                <span lang="en">BROWN FLAG</span>
+                                <span lang="pt">BANDEIRA MARROM</span>
+                            </label>       
+                            <label class="badge">HI-TAG = 4</label>                         
+                        </div>
+                    </div>
+
+                    <div class="flex-columns flex-gap-32 flex-justify-content-center">
+                        <div class="flex-rows flex-gap-16 flex-align-items-center">
+                            <img style="width: 40px;" class="sprite" src="res/sprites/flag-team-0.png" alt="gray team - num 0 - pal 12" title="blue team - num 1 - pal 9">
+                            <label class="badge">
+                                <span lang="en">GRAY FLAG</span>
+                                <span lang="pt">BANDEIRA CINZA</span>
+                            </label>
+                            <label class="badge">HI-TAG = 0</label>
+                        </div>
+                    </div>
+
+                    <img src="res/screenshots/mapster-flags.png" alt="mapster flags" class="screenshot" style="border: none;">
+
+                </div>
+            
+            </section>
+        
         </div>
 
         <div id="for-developers" class="content box flex-rows flex-gap-32">
@@ -2335,26 +2545,6 @@ MAPDir = "../maps"</pre>
             <span lang="en">Information for creators and developers.</span>
             <span lang="pt">Informações para criadores e desenvolvedores.</span>
             
-            <hr>
-            
-            <section id="mapping-guide">
-            
-                <div class="flex-rows flex-gap-32">
-            
-                    <h2>
-                        <span id="mapping-guide"></span>
-                        <span lang="en">Mapping Guide</span>
-                        <span lang="pt">Guia para Criar Mapas</span>
-                        <a href="#mapping-guide">#</a>
-                    </h2>
-
-                    <span lang="en">The flag uses picnum 5888, contained in TILES023.ART file.</span>
-                    <span lang="pt">A bandeira usa o picnum 5888, contido no arquivo TILES023.ART.</span>
-            
-                </div>
-            
-            </section>
-
             <hr>
             
             <section id="command-line-arguments-section">

@@ -109,12 +109,12 @@
                             <span lang="pt">Nomes dos Alvos</span>
                         </a>
                     </li>
-                    <!-- <li>
+                    <li>
                         <a href="#weapon-switch-priority">
                             <span lang="en">Weapon Switch Priority</span>
                             <span lang="pt">Prioridade de Troca de Armas</span>
                         </a>
-                    </li> -->
+                    </li>
                     <li>
                         <a href="#always-drop-weapon">
                             <span lang="en">Always Drop Weapon</span>
@@ -276,7 +276,19 @@
                             <span lang="en">Exploit Mode</span>
                             <span lang="pt">Pato Mode</span>
                         </a>
+                    </li>
+                    <li>
+                        <a href="#lock-players">
+                            <span lang="en">Lock Players</span>
+                            <span lang="pt">Travar Jogadores</span>
+                        </a>
                     </li> 
+                    <li>
+                        <a href="#lock-options">
+                            <span lang="en">Lock Options</span>
+                            <span lang="pt">Travar Opções</span>
+                        </a>
+                    </li>
                 </ul>
             </li>
             <!-- arsenal rebalance -->
@@ -1360,7 +1372,7 @@
             
             <hr>
             
-            <!-- <section id="weapon-switch-priority-section">
+            <section id="weapon-switch-priority-section">
             
                 <div class="flex-rows flex-gap-32">
             
@@ -1370,12 +1382,15 @@
                         <span lang="pt">Prioridade de Troca de Armas</span>
                         <a href="#weapon-switch-priority">#</a>
                     </h2>
+
+                    <span lang="en">[UNDER CONSTRUCTION]</span>
+                    <span lang="pt">[EM CONSTRUÇÃO]</span>
             
-                    </div>
+                </div>
             
             </section>
             
-            <hr> -->
+            <hr>
             
             <section id="always-drop-weapon-section">
             
@@ -1877,7 +1892,7 @@
             
                     <h2>
                         <span id="user-map-selector"></span>
-                        <span lang="en">Dukematch Selector</span>
+                        <span lang="en">User Map Selector</span>
                         <span lang="pt">Seletor de User Maps</span>
                         <a href="#user-map-selector">#</a>
                     </h2>
@@ -1887,7 +1902,7 @@
 
                     <img src="res/screenshots/user-map-selector.gif" alt="user map selector" class="screenshot">
 
-                    <span lang="en">Clicking on this new option will show a list of all maps in your configured user maps folder. You can press a charatcer key and the cursor will be positioned at the first entry that begins with that letter.</span>
+                    <span lang="en">Clicking on this new option will show a list of all maps in your configured user maps folder. You can press a character key and the cursor will be positioned at the first entry that begins with that letter.</span>
                     <span lang="pt">Clicar nessa nova opção vai exibir uma lista com todos os user maps que estiverem no diretorio de user maps configurado. Apertar uma tecla fará com que o cursor seja posicionado no primeiro mapa que comece com a letra pressionada.</span>
 
                     <img src="res/screenshots/user-map-selector.png" alt="user map selector" class="screenshot">
@@ -1924,8 +1939,11 @@ MAPDir = "../maps"</pre>
                         <span lang="pt">Seletor de Demo</span>
                         <a href="#demo-selector">#</a>
                     </h2>
+
+                    <span lang="en">[UNDER CONSTRUCTION]</span>
+                    <span lang="pt">[EM CONSTRUÇÃO]</span>
             
-                    </div>
+                </div>
             
             </section>
             
@@ -1979,6 +1997,9 @@ MAPDir = "../maps"</pre>
                     <span lang="en">Now the game supports wide and ultrawide resolutions. Just go to <pre>Options > Video Setup > Widescreen</pre>.</span>
                     <span lang="pt">Agora o jogo suporta resoluções wide e ultrawide. Basta ir em <pre>Options > Video Setup > Widescreen</pre>.</span>
             
+                    <span lang="en">The game now also uses Duke Nukem 3D World Tour weapon model sprites at wide-screen resolutions, so the weapons can be properly aligned at the middle of the screen without showing the cut edges.</span>
+                    <span lang="pt">O jogo agora usa as texturas das armas do Duke Nukem 3D World Tour nas resoluções wide-screen, para que as armas fiquem alinhadas corretamente no centro da tela sem aparecer as pontas cortadas.</span>
+
                 </div>
             
             </section>
@@ -2037,6 +2058,46 @@ MAPDir = "../maps"</pre>
                 </div>
             
             </section>
+
+            <hr>
+
+            <section id="lock-players-section">
+            
+                <div class="flex-rows flex-gap-32">
+            
+                    <h2>
+                        <span id="lock-players"></span>
+                        <span lang="en">Lock Players</span>
+                        <span lang="pt">Travar Jogadores</span>
+                        <a href="#lock-players">#</a>
+                    </h2>
+
+                    <span lang="en">You can start the game with the argument <pre>/lockplayers</pre> to prevent players from changing their name, color and team. Only one player can use this argument, otherwise the game won't start.</span>
+                    <span lang="pt">Você pode iniciar o jogo com o argumento <pre>/lockplayers</pre> para impedir que os jogadores troquem seu nome, cor e time. Apenas um jogador pode usar esse argumento, caso contrário o jogo não iniciará.</span>
+            
+                </div>
+            
+            </section>
+
+            <hr>
+
+            <section id="lock-options-section">
+            
+                <div class="flex-rows flex-gap-32">
+            
+                    <h2>
+                        <span id="lock-options"></span>
+                        <span lang="en">Lock Options</span>
+                        <span lang="pt">Travar Opções</span>
+                        <a href="#lock-options">#</a>
+                    </h2>
+
+                    <span lang="en">You can start the game with the argument <pre>/lockoptions</pre> to prevent players from changing the netflags. Only one player can use this argument, otherwise the game won't start.</span>
+                    <span lang="pt">Você pode iniciar o jogo com o argumento <pre>/lockoptions</pre> para impedir que os jogadores modifiquem as netflags. Apenas um jogador pode usar esse argumento, caso contrário o jogo não iniciará.</span>
+            
+                </div>
+            
+            </section>
             
         </div>
 
@@ -2085,9 +2146,8 @@ MAPDir = "../maps"</pre>
                         <a href="#faster-devastator-projectiles">#</a>
                     </h2>
 
-                    <span lang="en">Devastator projectiles will move a little faster. The ammount of projectiles shot per second remains the same.</span>
-                    <span lang="pt">Os projeteis da devastator vão se mover um pouco mais rápido. A quantidade de projéteis atirados por segundo continua a mesma.</span>
-            
+                    <span lang="en">Devastator projectiles will move faster. The ammount of projectiles shot per second remains the same.</span>
+                    <span lang="pt">Os projeteis da devastator vão se mover mais rápido. A quantidade de projéteis atirados por segundo continua a mesma.</span>
             
                 </div>
             
@@ -2373,7 +2433,7 @@ MAPDir = "../maps"</pre>
                     </h2>
 
                     <span lang="en">Screenshot files were not being created if players' nicknames had invalid characters. This is fixed now and invalid characters will be replaced by an underline.</span>
-                    <span lang="pt">As screenshots não eram salvas caso algum jogador tivesse caracteres inválidos do nickname. Isso foi corrigido e agora os caracteres inválidos serão substituídos por um underline.</span>
+                    <span lang="pt">As screenshots não eram salvas caso algum jogador tivesse caracteres inválidos no nickname. Isso foi corrigido e agora os caracteres inválidos serão substituídos por um underline.</span>
             
                 </div>
             
@@ -2464,8 +2524,8 @@ MAPDir = "../maps"</pre>
                         <a href="#spawn-order">#</a>
                     </h2>
 
-                    <span lang="en"></span>
-                    <span lang="pt"></span>
+                    <span lang="en">[UNDER CONSTRUCTION]</span>
+                    <span lang="pt">[EM CONSTRUÇÃO]</span>
                     
                     [PEGAR O SCRIPT QUE O FOX FEZ PRO NDUKE]
                     https://web.archive.org/web/20180211075404/http://nduke.dukenukem.com.br/?p=mapping-guide
@@ -2567,9 +2627,9 @@ MAPDir = "../maps"</pre>
                         <a href="#command-line-arguments">#</a>
                     </h2>
 
-                    <div class="info args">
+                    <div class="arg" data-arg="/c#">
                         <span lang="en">
-                            /c# where # is the game mode<br>
+                            sets the game mode, where # is the game mode<br>
                             1 = Dukematch (DM)<br>
                             2 = COOP<br>
                             3 = Team Dukematch (TDM)<br>
@@ -2578,7 +2638,7 @@ MAPDir = "../maps"</pre>
                             6 = ATK/DEF CTF (ADCTF)
                         </span>
                         <span lang="pt">
-                            /c# onde # é o modo de jogo<br>
+                            define o modo de jogo, onde # é o modo de jogo<br>
                             1 = Dukematch (DM)<br>
                             2 = COOP<br>
                             3 = Team Dukematch (TDM)<br>
@@ -2588,13 +2648,14 @@ MAPDir = "../maps"</pre>
                         </span>
                     </div>
 
-                    <div class="info args">
-                        <span lang="en">/y## where ## is the score ammount [1-99]</span>
-                        <span lang="pt">/y## onde ## é o numero de pontos [1-99]</span>
+                    <div class="arg" data-arg="/y##">
+                        <span lang="en">sets the score limit, where ## is the score ammount [1-99]</span>
+                        <span lang="pt">define o limite de pontuação, onde ## é o numero de pontos [1-99]</span>
                     </div>
-                    <div class="info args">
-                        <span lang="en">/k### where ### is a number in minutes, max of 240 (4 hours)</span>
-                        <span lang="pt">/k### onde ### é um numero em minutos, maximo de 240 (4 horas)</span>
+                    
+                    <div class="arg" data-arg="/k###">
+                        <span lang="en">sets the time limit, where ### is a number in minutes, max of 240 (4 hours)</span>
+                        <span lang="pt">define o limite de tempo, onde ### é um numero em minutos, maximo de 240 (4 horas)</span>
                     </div>
             
                 </div>

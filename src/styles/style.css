@@ -69,7 +69,7 @@ table {
 }
 
 /* small hack to fix <pre> overlaping */
-:not(a):not(label):not(h1):not(h2):not(h3) > span {
+:not(a):not(label):not(h1):not(h2):not(h3):not(div.arg) > span {
     line-height: 22px;
 }
 
@@ -120,24 +120,23 @@ label.divider {
     &::after { margin-left: 8px; }
 }
 
-div.info {
+div.arg {
 
-    /* border: 1px solid gray; */
     border-radius: 5px;
     line-height: 32px;
     min-height: 32px;
-    /* box-sizing: border-box; */
     display: flex;
     background-color: #1E1E1E;
     font-family: monospace;
 
     &::before {
         display: flex;
+        content: attr(data-arg);
         width: 192px;
         min-width: 192px;
         max-width: 192px;
         background-color: #3E3E3E;
-        font-family: "Candara";
+        font-family: monospace;
         font-size: 14px;
         font-weight: bold;
         border-top-left-radius: 3px;
@@ -147,17 +146,7 @@ div.info {
         box-sizing: border-box;
         padding-right: 16px;
         margin-right: 16px;
-        justify-content: end;
-        align-items: center;
+        justify-content: end;        
     }
 
 }
-
-html[lang="en"] div.info.path::before { content: "MENU PATH"; }
-html[lang="pt"] div.info.path::before { content: "CAMINHO NO MENU"; }
-
-html[lang="en"] div.info.args::before { content: "ARGUMENT"; }
-html[lang="pt"] div.info.args::before { content: "ARGUMENTO"; }
-
-html[lang="en"] div.info.console::before { content: "CONSOLE COMMAND"; }
-html[lang="pt"] div.info.console::before { content: "COMANDO NO CONSOLE"; }

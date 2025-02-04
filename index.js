@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         const topMostId = getTopMostVisibleElement(sections).id.replace("-section", "");
 
+        window.history.pushState({}, null, `#${topMostId}`);
+
         document.querySelectorAll("div.menu li").forEach(e => e.classList.remove("highlight"));
         const li = document.querySelector(`a[href="#${topMostId}"]`).closest("li");
         li.classList.add("highlight");

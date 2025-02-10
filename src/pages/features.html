@@ -2657,6 +2657,231 @@ MAPDir = "../maps"</pre>
                         <span lang="en">sets the time limit, where ### is a number in minutes, max of 240 (4 hours)</span>
                         <span lang="pt">define o limite de tempo, onde ### é um numero em minutos, maximo de 240 (4 horas)</span>
                     </div>
+
+                    <div class="arg" data-arg="/netflags#########">
+                        <span>
+                            <span lang="en">enables and disables various games features, where ######### is a bitfield, each bit corresponds to a specific feature, you have to sum each bit to combine them:</span>
+                            <span lang="pt">habilita e desabilita varios recursos do jogo, onde ######### é um bitfield, cada bit corresponde a um recurso, você precisa somar os valores para combina-los:</span>
+                            <br>
+                            1 = GETWEAPONCE<br>
+                            2 = RESPAWN_MONSTERS<br>
+                            4 = RESPAWN_ITEMS<br>
+                            8 = RESPAWN_INVENTORY<br>
+                            16 = MARKERS<br>
+                            32 = NO_MONSTERS<br>
+                            64 = NO_ACCESS<br>
+                            128 = COOP_FFIRE<br>
+                            256 = DMSWITCHES<br>
+                            512 = MPITEMS<br>
+                            1024 = WEAPON_ALWAYS_DROP<br>
+                            2048 = DISABLE_TARGET_NAMES<br>
+                            4096 = DISABLE_MAP_EXIT<br>
+                            8192 = FORCE_RESPAWN<br>
+                            16384 = RESPAWN_FARTHEST<br>
+                            32768 = TEAM_USE_NORMAL_SPAWNS<br>
+                            65536 = TEAM_AUTOAIM_ON_ALLIES<br>
+                            131072 = TEAM_DISPLAY<br>
+                            262144 = TEAM_OUTLINE<br>
+                            524288 = CTF_FLAG_OUTLINE<br>
+                            1048576 = NO_TEAM_LASER_COLORS<br>
+                            2097152 = CTF_NOROIDS<br>
+                            4194304 = CTF_NOJPACK<br>
+                            8388608 = ARSENAL_REBALANCE<br>
+                            16777216 = FREEZER_CANT_HURT_OWNER<br>
+                            33554432 = DESTRUCTABLE_CAMERAS<br>
+                            67108864 = LASERMODE_HEAT<br>
+                            134217728 = FIX_TRIPBOMB_ON_SLOPES<br>
+                            <span lang="en">for example: if you want to play with FORCE_RESPAWN and ARSENAL_REBALANCE, you use the argument -netflags8396800 (8192 + 8388608)</span>
+                            <span lang="pt">por exemplo: se você quiser jogar com FORCE_RESPAWN e ARSENAL_REBALANCE, você deve utilizar o argumento -netflags8396800 (8192 + 8388608)</span>
+                        </span>
+                    </div>
+
+                    <div class="arg" data-arg="/weapflags####">
+                        <span>
+                            <span lang="en">starts the match with selected weapons, where #### is a bitfield, each bit corresponds to a weapon, you have to sum each bit to combine them:</span>
+                            <span lang="pt">inicia a partida com as armas selecionadas, onde #### é um bitfield, cada bit corresponde a uma arma, você deve somar cada bit para combina-los:</span>
+                            <br>
+                            1 = Pistol<br>
+                            2 = Shotgun<br>
+                            4 = Chaingun<br>
+                            8 = RPG<br>
+                            16 = Pipebomb<br>
+                            32 = Shrinker<br>
+                            64 = Devastator<br>
+                            128 = Tripbomb<br>
+                            256 = Freezer<br>
+                            512 = + Full Ammo<br>
+                            1024 = Expander<br>
+                            <span lang="en">for example: if you want to start with Shotgun and RPG, you use the argument -weapflags10 (2 + 8)</span>
+                            <span lang="pt">por exemplo: se você quiser iniciar com a Shotgun e com a RPG, use o argumento -weapflags10 (2 + 8)</span>
+                        </span>
+                    </div>
+
+                    <div class="arg" data-arg="/invflags####">
+                        <span>
+                            <span lang="en">starts the match with selected items, where #### is a bitfield, each bit corresponds to an item, you have to sum each bit to combine them:</span>
+                            <span lang="pt">inicia a partida com os items selecionadas, onde #### é um bitfield, cada bit corresponde a um item, você deve somar cada bit para combina-los:</span>
+                            <br>
+                            1 = Key Cards<br>
+                            2 = Medkit<br>
+                            4 = Steroids<br>
+                            8 = Holoduke<br>
+                            16 = Jetpack<br>
+                            32 = Nightvision<br>
+                            64 = Scuba Gear<br>
+                            128 = Boots<br>
+                            256 = Armor<br>
+                            512 = Atomic Health 1<br>
+                            1024 = Atomic Health 2<br>
+                            <span lang="en">for example: if you want to start with Steroids and 150 health, you use the argument -invflags516 (4 + 512)</span>
+                            <span lang="pt">por exemplo: se você quiser iniciar com Steroids e com 150 de vida, use o argumento -invflags516 (4 + 512)</span>
+                        </span>
+                    </div>
+
+                    <div class="arg" data-arg="/disableautoaim">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/exploitmode">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/lockplayers">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/lockoptions">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="-color #">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="-team #">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <h3>
+                        <span lang="en">Default game arguments</span>
+                        <span lang="pt">Argumentos padrão do jogo</span>
+                    </h3>
+
+                    <div class="arg" data-arg="/?">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/a">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/dFILE">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/f#">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/gFile">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/i#">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/l##">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/m">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/n#">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/q#">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/r">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/s#">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/t#">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/u#########">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/v#">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/w">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/xFILE">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/z">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="/#">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="-map FILE">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="-name NAME">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
+
+                    <div class="arg" data-arg="-net">
+                        <span lang="en"></span>
+                        <span lang="pt"></span>
+                    </div>
             
                 </div>
             

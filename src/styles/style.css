@@ -69,7 +69,7 @@ table {
 }
 
 /* small hack to fix <pre> overlaping */
-:not(a):not(label):not(h1):not(h2):not(h3):not(div.arg) > span {
+:not(a):not(label):not(h1):not(h2):not(h3):not(div.arg):not(div.arg > span) > span {
     line-height: 22px;
 }
 

@@ -1,3 +1,28 @@
+input[type="text"] {
+    background-color: black;
+    color: lightgray;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    padding: 8px;
+    font-weight: bold;    
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin-right: 16px;
+    &:checked {
+        accent-color: var(--progold);
+    }
+    & + label {
+        cursor: pointer;
+        line-height: 22px;
+        text-align: center;
+    }
+}
+
 button {
     background-color: var(--progold);
     border-radius: 8px;

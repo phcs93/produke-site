@@ -36,6 +36,30 @@ window["load-features"] = async () => {
                         "pt": "ATK/DEF CTF"
                     }
                 },
+                "survival": {
+                    "title": {
+                        "en": "Survival",
+                        "pt": "Survival"
+                    }
+                },
+                "lms": {
+                    "title": {
+                        "en": "Last Man Standing (LMS)",
+                        "pt": "Last Man Standing (LMS)"
+                    }
+                },
+                "tlms": {
+                    "title": {
+                        "en": "Team LMS",
+                        "pt": "Team LMS"
+                    }
+                },                
+                "terminator": {
+                    "title": {
+                        "en": "Terminator",
+                        "pt": "Terminator"
+                    }
+                },
                 "score-and-time-limit": {
                     "title": {
                         "en": "Score and Time Limit",

@@ -174,6 +174,12 @@ window["load-features"] = async () => {
                         "pt": "Prioridade de Troca de Armas"
                     }
                 },
+                "revealed-automap": {
+                    "title": {
+                        "en": "Revealed Automap",
+                        "pt": "Mapa Revelado"
+                    }
+                },
                 "always-drop-weapon": {
                     "title": {
                         "en": "Always Drop Weapon",
@@ -442,6 +448,18 @@ window["load-features"] = async () => {
                     "title": {
                         "en": "Invisible Tripbomb Laser",
                         "pt": "Laser das Tripbombs Invisivel"
+                    }
+                },
+                "double-kick": {
+                    "title": {
+                        "en": "[1.3D] Double Kick",
+                        "pt": "[1.3D] Chute Duplo"
+                    }
+                },
+                "no-expander": {
+                    "title": {
+                        "en": "[1.3D] No Expander",
+                        "pt": "[1.3D] Sem Expander"
                     }
                 }
             }

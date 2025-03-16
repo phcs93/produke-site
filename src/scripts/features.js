@@ -86,7 +86,7 @@ window["load-features"] = async () => {
                 },
                 "team-info": {
                     "title": {
-                        "en": "Team Info",
+                        "en": "Team Overhead Info",
                         "pt": "Informações de Time"
                     }
                 },

@@ -26,47 +26,75 @@
     <span lang="en">sets the time limit, where ### is a number in minutes, max of 240 (4 hours)</span>
     <span lang="pt">define o limite de tempo, onde ### é um numero em minutos, maximo de 240 (4 horas)</span>
 </div>
-<div class="arg" data-arg="/netflags#########">
+<div class="arg" data-arg="/netflagsA#">
     <span>
-        <span lang="en">enables and disables various games features, where ######### is a bitfield, each bit corresponds to a specific feature, you have to sum each bit to combine them:</span>
-        <span lang="pt">habilita e desabilita varios recursos do jogo, onde ######### é um bitfield, cada bit corresponde a um recurso, você precisa somar os valores para combina-los:</span>
+        <span lang="en">enables and disables various games features, where # is a bitfield, each bit corresponds to a specific feature, you have to sum each bit to combine them:</span>
+        <span lang="pt">habilita e desabilita varios recursos do jogo, onde # é um bitfield, cada bit corresponde a um recurso, você precisa somar os valores para combina-los:</span><br>
         <br>
-        1 = GETWEAPONCE<br>
-        2 = RESPAWN_MONSTERS<br>
-        4 = RESPAWN_ITEMS<br>
-        8 = RESPAWN_INVENTORY<br>
-        16 = MARKERS<br>
-        32 = NO_MONSTERS<br>
-        64 = NO_ACCESS<br>
-        128 = COOP_FFIRE<br>
-        256 = DMSWITCHES<br>
-        512 = MPITEMS<br>
-        1024 = WEAPON_ALWAYS_DROP<br>
-        2048 = DISABLE_TARGET_NAMES<br>
-        4096 = DISABLE_MAP_EXIT<br>
-        8192 = FORCE_RESPAWN<br>
-        16384 = RESPAWN_FARTHEST<br>
-        32768 = TEAM_USE_NORMAL_SPAWNS<br>
-        65536 = TEAM_AUTOAIM_ON_ALLIES<br>
-        131072 = TEAM_DISPLAY<br>
-        262144 = TEAM_OUTLINE<br>
-        524288 = CTF_FLAG_OUTLINE<br>
-        1048576 = NO_TEAM_LASER_COLORS<br>
-        2097152 = CTF_NOROIDS<br>
-        4194304 = CTF_NOJPACK<br>
-        8388608 = ARSENAL_REBALANCE<br>
-        16777216 = FREEZER_CANT_HURT_OWNER<br>
-        33554432 = DESTRUCTABLE_CAMERAS<br>
-        67108864 = LASERMODE_HEAT<br>
-        134217728 = FIX_TRIPBOMB_ON_SLOPES<br>
-        <span lang="en">for example: if you want to play with FORCE_RESPAWN and ARSENAL_REBALANCE, you use the argument -netflags8396800 (8192 + 8388608)</span>
-        <span lang="pt">por exemplo: se você quiser jogar com FORCE_RESPAWN e ARSENAL_REBALANCE, você deve utilizar o argumento -netflags8396800 (8192 + 8388608)</span>
+        1 = <span lang="en">Weapons Pickable Once</span><span lang="pt">Armas Pegaveis Apenas Uma Vez</span><br>
+        2 = <span lang="en">Respawn Monsters</span><span lang="pt">Renascer Monstros</span><br>
+        4 = <span lang="en">Respawn Items</span><span lang="pt">Items Reaparecem</span><br>
+        8 = <span lang="en">Respawn Inventory</span><span lang="pt">Inventario Reaparece</span><br>
+        16 = <span lang="en">Markers</span><span lang="pt">Marcadores</span><br>
+        32 = <span lang="en">No Monsters</span><span lang="pt">Sem Monstros</span><br>
+        64 = <span lang="en">No Keycards</span><span lang="pt">Sem Cartões</span><br>
+        128 = <span lang="en">[COOP/TEAM] Friendly Fire</span><span lang="pt">[COOP/TEAM] Fogo Amigo</span><br>
+        256 = <span lang="en">Spawn MP Only Switches</span><span lang="pt">Habilitar Switches Apenas De MP</span><br>
+        512 = <span lang="en">Spawn MP Only Items</span><span lang="pt">Habilitar Items Apenas De MP</span><br>
+        1024 = <span lang="en">Weapon Always Drops On Kill</span><span lang="pt">Sempre Derrubar Armas Ao Morrer</span><br>
+        2048 = <span lang="en">Revealed Automap</span><span lang="pt">Mapa Revelado</span><br>
+        4096 = <span lang="en">No Target Names</span><span lang="pt">Sem Nomes Dos Alvos</span><br>
+        8192 = <span lang="en">No Map Exit</span><span lang="pt">Sem Saída Do Mapa</span><br>
+        16384 = <span lang="en">[SURV/TLMS] Lives Are Shared</span><span lang="pt">[SURV/TLMS] Vidas Compartilhadas</span><br>
+        32768 = <span lang="en">Force Respawn</span><span lang="pt">Forçar Renascimento</span><br>
+        65536 = <span lang="en">[PVP] Respawn Farthest</span><span lang="pt">[PVP] Renascer Mais Distante</span><br>
+        131072 = <span lang="en">[TEAM] Teamless Spawn Points</span><span lang="pt">[TEAM] Pontos De Renascimento Sem Time</span><br>
+        262144 = <span lang="en">[COOP/TEAM] Autoaim On Allies</span><span lang="pt">[COOP/TEAM] Mira Automática Nos Aliados</span><br>
+        524288 = <span lang="en">[COOP/TEAM/TERM] Overhead Info</span><span lang="pt">[COOP/TEAM/TERM] Visor de Informações</span><br>
+        1048576 = <span lang="en">[COOP/TEAM/TERM] Outlines</span><span lang="pt">[COOP/TEAM/TERM] Contornos</span><br>
+        2097152 = <span lang="en">[CTF] Outline On Flags</span><span lang="pt">[CTF] Contorno Nas Bandeiras</span><br>
+        4194304 = <span lang="en">[CTF] Flag Return Instantly</span><span lang="pt">[CTF] Bandeira Retorna Instantaneamente</span><br>
+        8388608 = <span lang="en">[T/LMS] Restricted Spycam</span><span lang="pt">[T/LMS] Spycam Restrita</span><br>
+        16777216 = <span lang="en">[T/LMS] Restricted Chat</span><span lang="pt">[T/LMS] Chat Restrito</span><br>
+        <br>
+        <span lang="en">for example: if you want to play with "No Map Exit" and "Force Respawn", you use the argument -netflagsA40960 (8192 + 32768)</span>
+        <span lang="pt">por exemplo: se você quiser jogar com "Sem Saída Do Mapa" e "Forçar Renascimento", você deve utilizar o argumento -netflagsA40960 (8192 + 32768)</span>
+    </span>
+</div>
+<div class="arg" data-arg="/netflagsB#">
+    <span>
+        <span lang="en">enables and disables various games features, where # is a bitfield, each bit corresponds to a specific feature, you have to sum each bit to combine them:</span>
+        <span lang="pt">habilita e desabilita varios recursos do jogo, onde # é um bitfield, cada bit corresponde a um recurso, você precisa somar os valores para combina-los:</span><br>
+        <br>
+        1 = <span lang="en">[TEAM] No Colored Tripbombs</span><span lang="pt">[TEAM] Sem Tripbombs Coloridas</span><br>
+        2 = <span lang="en">[CTF] No Steroids If With Flag</span><span lang="pt">[CTF] Sem Steroids Com Bandeira</span><br>
+        4 = <span lang="en">[CTF] No Jetpack If With Flag</span><span lang="pt">[CTF] Sem Jetpack Com Bandeira</span><br>
+        8 = <span lang="en">Fix Tripbombs On Slopes</span><span lang="pt">Corrigir Tripbombs Em Rampas</span><br>
+        <br>
+        <span lang="en">for example: if you want to play with "[TEAM] No Colored Tripbombs" and "Fix Tripbombs On Slopes", you use the argument -netflagsB9 (1 + 8)</span>
+        <span lang="pt">por exemplo: se você quiser jogar com "[TEAM] Sem Tripbombs Coloridas" e "Corrigir Tripbombs Em Rampas", você deve utilizar o argumento -netflagsB9 (1 + 8)</span>
+    </span>
+</div>
+<div class="arg" data-arg="/netflagsC#">
+    <span>
+        <span lang="en">enables and disables various games features, where # is a bitfield, each bit corresponds to a specific feature, you have to sum each bit to combine them:</span>
+        <span lang="pt">habilita e desabilita varios recursos do jogo, onde # é um bitfield, cada bit corresponde a um recurso, você precisa somar os valores para combina-los:</span><br>
+        <br>
+        1 = <span lang="en">Arsenal Rebalance</span><span lang="pt">Rebalanceamento Do Arsenal</span><br>
+        2 = <span lang="en">Laser Invisible W/O Nightvision</span><span lang="pt">Laser Invisivel Sem Nightvision</span><br>
+        4 = <span lang="en">Freezer Can't Hurt Owner</span><span lang="pt">Freezer Não Danifica O Dono</span><br>
+        8 = <span lang="en">Destructable Cameras</span><span lang="pt">Cameras Destrutíveis</span><br>
+        16 = <span lang="en">[1.3D] Double Kick</span><span lang="pt">[1.3D] Chute Duplo</span><br>
+        32 = <span lang="en">[1.3D] No Expander</span><span lang="pt">[1.3D] Sem Expander</span><br>
+        <br>
+        <span lang="en">for example: if you want to play with "Laser Invisible W/O Nightvision" and "[1.3D] Double Kick", you use the argument -netflagsC18 (2 + 16)</span>
+        <span lang="pt">por exemplo: se você quiser jogar com "Laser Invisivel Sem Nightvision" e "[1.3D] Chute Duplo", você deve utilizar o argumento -netflagsC18 (2 + 16)</span>
     </span>
 </div>
 <div class="arg" data-arg="/weapflags####">
     <span>
         <span lang="en">starts the match with selected weapons, where #### is a bitfield, each bit corresponds to a weapon, you have to sum each bit to combine them:</span>
-        <span lang="pt">inicia a partida com as armas selecionadas, onde #### é um bitfield, cada bit corresponde a uma arma, você deve somar cada bit para combina-los:</span>
+        <span lang="pt">inicia a partida com as armas selecionadas, onde #### é um bitfield, cada bit corresponde a uma arma, você deve somar cada bit para combina-los:</span><br>
         <br>
         1 = Pistol<br>
         2 = Shotgun<br>
@@ -79,6 +107,7 @@
         256 = Freezer<br>
         512 = + Full Ammo<br>
         1024 = Expander<br>
+        <br>
         <span lang="en">for example: if you want to start with Shotgun and RPG, you use the argument -weapflags10 (2 + 8)</span>
         <span lang="pt">por exemplo: se você quiser iniciar com a Shotgun e com a RPG, use o argumento -weapflags10 (2 + 8)</span>
     </span>
@@ -86,7 +115,7 @@
 <div class="arg" data-arg="/invflags####">
     <span>
         <span lang="en">starts the match with selected items, where #### is a bitfield, each bit corresponds to an item, you have to sum each bit to combine them:</span>
-        <span lang="pt">inicia a partida com os items selecionadas, onde #### é um bitfield, cada bit corresponde a um item, você deve somar cada bit para combina-los:</span>
+        <span lang="pt">inicia a partida com os items selecionadas, onde #### é um bitfield, cada bit corresponde a um item, você deve somar cada bit para combina-los:</span><br>
         <br>
         1 = Key Cards<br>
         2 = Medkit<br>
@@ -99,6 +128,7 @@
         256 = Armor<br>
         512 = Atomic Health 1<br>
         1024 = Atomic Health 2<br>
+        <br>
         <span lang="en">for example: if you want to start with Steroids and 150 health, you use the argument -invflags516 (4 + 512)</span>
         <span lang="pt">por exemplo: se você quiser iniciar com Steroids e com 150 de vida, use o argumento -invflags516 (4 + 512)</span>
     </span>

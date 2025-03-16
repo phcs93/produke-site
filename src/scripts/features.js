@@ -380,8 +380,8 @@ window["load-features"] = async () => {
                 "pt": "REBALANCEAMENTO DO ARSENAL"
             },
             "description": {
-                "en": "Optional rebalancing of various game elements. The ideia here is to make some specific weapons and items a little bit more useful.",
-                "pt": "Rebalanceamento opcional de varios elementos do jogo. A idéia é tornar algumas armas e items especificos um pouco mais úteis."
+                "en": "Optional rebalancing of various game elements. The ideia here is to make some specific weapons and items a little bit more useful. You can enable it in the menu <pre>Netplay Options > NetFlags > Rebalanced Arsenal</pre>.",
+                "pt": "Rebalanceamento opcional de varios elementos do jogo. A idéia é tornar algumas armas e items especificos um pouco mais úteis. Você pode habilitar no menu <pre>Netplay Options > NetFlags > Rebalanced Arsenal</pre>."
             },
             "sections": {
                 "nightvision-full-visibility": {

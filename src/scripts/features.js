@@ -354,10 +354,10 @@ window["load-features"] = async () => {
                 "pt": "Melhorias para previnir hacks e abusos."
             },
             "sections": {
-                "exploit-mode": {
+                "lock-options": {
                     "title": {
-                        "en": "Exploit Mode",
-                        "pt": "Pato Mode"
+                        "en": "Lock Options",
+                        "pt": "Travar Opções"
                     }
                 },
                 "lock-players": {
@@ -366,10 +366,16 @@ window["load-features"] = async () => {
                         "pt": "Travar Jogadores"
                     }
                 },
-                "lock-options": {
+                "exploit-mode": {
                     "title": {
-                        "en": "Lock Options",
-                        "pt": "Travar Opções"
+                        "en": "Exploit Mode",
+                        "pt": "Pato Mode"
+                    }
+                },
+                "allow-mods": {
+                    "title": {
+                        "en": "Allow Mods",
+                        "pt": "Permitir Mods"
                     }
                 }
             }
@@ -648,8 +654,8 @@ window["load-features"] = async () => {
 
     `).join("");
 
-    // side menu autoscroll
-    document.body.onscroll = e => {
+    // side menu autoscroll    
+    document.body.onscroll = debounce(async e => {
 
         const sections = document.querySelectorAll("div.content section");
 
@@ -688,11 +694,23 @@ window["load-features"] = async () => {
         document.querySelectorAll("div#menu li").forEach(e => e.classList.remove("highlight"));
         const li = document.querySelector(`a[href="#${topMostId}"]`).closest("li");
         li.classList.add("highlight");
-        li.scrollIntoView({
-            block: "nearest"
-        });
 
-    };
+        // sadly, this causes some problems while scrolling, it's better to leave it out
+        // li.scrollIntoView({
+        //     block: "nearest"
+        // });
+
+    }, 100);    
+
+    // hack to prevent side menu scrolling from affecing body
+    const menu = document.getElementById("menu");
+    menu.addEventListener("wheel", function (e) {
+        const atTop = menu.scrollTop === 0;
+        const atBottom = menu.scrollHeight - menu.clientHeight === menu.scrollTop;    
+        if ((e.deltaY < 0 && atTop) || (e.deltaY > 0 && atBottom)) {
+            e.preventDefault();
+        }
+    }, { passive: false });
 
     // hack for proper anchoring after content loaded
     await sleep(1);

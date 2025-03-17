@@ -695,10 +695,17 @@ window["load-features"] = async () => {
         const li = document.querySelector(`a[href="#${topMostId}"]`).closest("li");
         li.classList.add("highlight");
 
-        // sadly, this causes some problems while scrolling, it's better to leave it out
         li.scrollIntoView({
-            block: "nearest"
+            behavior: "smooth",
+            block: "nearest"            
         });
+
+        // li.scrollIntoView({
+        //     behavior: "smooth",
+        //     block: "center"            
+        // });
+
+        //li.scrollIntoViewIfNeeded(true);
 
     }, 100);    
 

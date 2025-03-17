@@ -696,9 +696,9 @@ window["load-features"] = async () => {
         li.classList.add("highlight");
 
         // sadly, this causes some problems while scrolling, it's better to leave it out
-        // li.scrollIntoView({
-        //     block: "nearest"
-        // });
+        li.scrollIntoView({
+            block: "nearest"
+        });
 
     }, 100);    
 

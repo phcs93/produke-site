@@ -695,10 +695,10 @@ window["load-features"] = async () => {
         const li = document.querySelector(`a[href="#${topMostId}"]`).closest("li");
         li.classList.add("highlight");
 
-        li.scrollIntoView({
-            behavior: "smooth",
-            block: "nearest"            
-        });
+        // li.scrollIntoView({
+        //     behavior: "smooth",
+        //     block: "nearest"            
+        // });
 
         // li.scrollIntoView({
         //     behavior: "smooth",
@@ -706,6 +706,19 @@ window["load-features"] = async () => {
         // });
 
         //li.scrollIntoViewIfNeeded(true);
+
+        const menu = document.getElementById("menu");
+
+        const menuHeight = menu.clientHeight;
+        const itemOffsetTop = li.offsetTop;
+        const itemHeight = li.clientHeight;
+
+        const scrollTo = itemOffsetTop - (menuHeight / 2) + (itemHeight / 2);
+
+        menu.scrollTo({
+            top: scrollTo,
+            behavior: "smooth"
+        });
 
     }, 100);    
 

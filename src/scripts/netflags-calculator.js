@@ -3,7 +3,7 @@ window["load-netflags-calculator"] = async () => {
     const params = new URLSearchParams(document.location.search);
     const page = params.get("p");
 
-    const netflagsAcount = 25;
+    const netflagsAcount = 26;
     const netflagsBcount = 4;
     const netflagsCcount = 6;
     const weapflagscount = 11;
